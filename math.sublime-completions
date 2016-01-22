@@ -1,0 +1,85 @@
+{
+    "scope": "source.js - variable.other.js",
+    "completions": [
+        {
+            "trigger": "ld.add(augend);\t _ Math",
+            "contents": "_.add(${1:augend});$0"
+    },
+        {
+            "trigger": "ld.add(augend, addend);\t _ Math",
+            "contents": "_.add(${1:augend}, ${2:addend});$0"
+    },
+        {
+            "trigger": "ld.ceil(number);\t _ Math",
+            "contents": "_.ceil(${1:number});$0"
+    },
+        {
+            "trigger": "ld.ceil(number, [precision=0]);\t _ Math",
+            "contents": "_.ceil(${1:number}, ${2:[precision=0]});$0"
+    },
+        {
+            "trigger": "ld.floor(number);\t _ Math",
+            "contents": "_.floor(${1:number});$0"
+    },
+        {
+            "trigger": "ld.floor(number, [precision=0]);\t _ Math",
+            "contents": "_.floor(${1:number}, ${2:[precision=0]});$0"
+    },
+        {
+            "trigger": "ld.max(array);\t _ Math",
+            "contents": "_.max(${1:array});$0"
+    },
+        {
+            "trigger": "ld.maxBy(array);\t _ Math",
+            "contents": "_.maxBy(${1:array});$0"
+    },
+        {
+            "trigger": "ld.maxBy(array, [iteratee=_.identity]);\t _ Math",
+            "contents": "_.maxBy(${1:array}, ${2:[iteratee=_.identity]});$0"
+    },
+        {
+            "trigger": "ld.mean(array);\t _ Math",
+            "contents": "_.mean(${1:array});$0"
+    },
+        {
+            "trigger": "ld.min(array);\t _ Math",
+            "contents": "_.min(${1:array});$0"
+    },
+        {
+            "trigger": "ld.minBy(array);\t _ Math",
+            "contents": "_.minBy(${1:array});$0"
+    },
+        {
+            "trigger": "ld.minBy(array, [iteratee=_.identity]);\t _ Math",
+            "contents": "_.minBy(${1:array}, ${2:[iteratee=_.identity]});$0"
+    },
+        {
+            "trigger": "ld.round(number);\t _ Math",
+            "contents": "_.round(${1:number});$0"
+    },
+        {
+            "trigger": "ld.round(number, [precision=0]);\t _ Math",
+            "contents": "_.round(${1:number}, ${2:[precision=0]});$0"
+    },
+        {
+            "trigger": "ld.subtract(minuend);\t _ Math",
+            "contents": "_.subtract(${1:minuend});$0"
+    },
+        {
+            "trigger": "ld.subtract(minuend, subtrahend);\t _ Math",
+            "contents": "_.subtract(${1:minuend}, ${2:subtrahend});$0"
+    },
+        {
+            "trigger": "ld.sum(array);\t _ Math",
+            "contents": "_.sum(${1:array});$0"
+    },
+        {
+            "trigger": "ld.sumBy(array);\t _ Math",
+            "contents": "_.sumBy(${1:array});$0"
+    },
+        {
+            "trigger": "ld.sumBy(array, [iteratee=_.identity]);\t _ Math",
+            "contents": "_.sumBy(${1:array}, ${2:[iteratee=_.identity]});$0"
+    }
+  ]
+}

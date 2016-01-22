@@ -1,0 +1,9 @@
+{
+    "scope": "source.js - variable.other.js",
+    "completions": [
+        {
+            "trigger": "ld.now()\t _ Date",
+            "contents": "_.now()$0"
+    }
+  ]
+}

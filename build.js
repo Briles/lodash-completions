@@ -9,7 +9,7 @@
   const fs = require('fs');
 
   var writeCompletions = function(filename, contents) {
-    var destPath = path.join(__dirname, filename.toLowerCase() + '.sublime-completions');
+    var destPath = path.join(__dirname, '/completions/', filename.toLowerCase() + '.sublime-completions');
 
     fs.writeFile(destPath, JSON.stringify(contents, null, 4), function(err) {
       if (err) {

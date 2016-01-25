@@ -52,24 +52,26 @@
         codeSnippets.each(function() {
           var completion = {};
 
-          var trigger = $(this).text() + '\t _ ' + group;
+          var trigger = $(this).text();
 
           if (trigger[0] === '_') {
             var len = trigger.length;
             trigger = commander.namespace + trigger.substring(1, len);
           }
 
-          completion.trigger = trigger;
+          completion.trigger = trigger + '\t _ ' + group;
 
-          var codeArgs = $(this).nextUntil('ol').next().find('li').map(function() {
-            return $(this).find('code').text();
+          var tabParams = [];
+          var params = $(this).nextUntil('ol').next().find('li').map(function(i, el) {
+            el = $(this).find('code').text();
+            tabParams.push('${' + (i + 1) + ':' + el + '}');
+
+            return el;
           }).get();
 
-          var tabArgs = codeArgs.map(function(el, i) {
-            return '${' + (i + 1) + ':' + el + '}';
-          }).join(', ');
+          tabParams = tabParams.join(', ');
 
-          completion.contents = $(this).text().replace(codeArgs.join(', '), tabArgs) + '$0';
+          completion.contents = $(this).text().replace(params.join(', '), tabParams) + '$0';
           completionsData.completions.push(completion);
         });
 

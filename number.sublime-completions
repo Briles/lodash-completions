@@ -1,41 +1,17 @@
 {
-    "scope": "source.js - variable.other.js",
+    "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.clamp(number);\t _ Number",
-            "contents": "_.clamp(${1:number});$0"
-    },
+            "trigger": "ld.clamp(number, [lower], upper)\t _ Number",
+            "contents": "_.clamp(${1:number}, ${2:[lower]}, ${3:upper})$0"
+        },
         {
-            "trigger": "ld.clamp(number, [lower]);\t _ Number",
-            "contents": "_.clamp(${1:number}, ${2:[lower]});$0"
-    },
+            "trigger": "ld.inRange(number, [start=0], end)\t _ Number",
+            "contents": "_.inRange(${1:number}, ${2:[start=0]}, ${3:end})$0"
+        },
         {
-            "trigger": "ld.clamp(number, [lower], upper);\t _ Number",
-            "contents": "_.clamp(${1:number}, ${2:[lower]}, ${3:upper});$0"
-    },
-        {
-            "trigger": "ld.inRange(number);\t _ Number",
-            "contents": "_.inRange(${1:number});$0"
-    },
-        {
-            "trigger": "ld.inRange(number, [start=0]);\t _ Number",
-            "contents": "_.inRange(${1:number}, ${2:[start=0]});$0"
-    },
-        {
-            "trigger": "ld.inRange(number, [start=0], end);\t _ Number",
-            "contents": "_.inRange(${1:number}, ${2:[start=0]}, ${3:end});$0"
-    },
-        {
-            "trigger": "ld.random([lower=0]);\t _ Number",
-            "contents": "_.random(${1:[lower=0]});$0"
-    },
-        {
-            "trigger": "ld.random([lower=0], [upper=1]);\t _ Number",
-            "contents": "_.random(${1:[lower=0]}, ${2:[upper=1]});$0"
-    },
-        {
-            "trigger": "ld.random([lower=0], [upper=1], [floating]);\t _ Number",
-            "contents": "_.random(${1:[lower=0]}, ${2:[upper=1]}, ${3:[floating]});$0"
-    }
-  ]
+            "trigger": "ld.random([lower=0], [upper=1], [floating])\t _ Number",
+            "contents": "_.random(${1:[lower=0]}, ${2:[upper=1]}, ${3:[floating]})$0"
+        }
+    ]
 }

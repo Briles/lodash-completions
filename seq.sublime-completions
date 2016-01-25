@@ -1,77 +1,57 @@
 {
-    "scope": "source.js - variable.other.js",
+    "scope": "source.js",
     "completions": [
         {
-            "trigger": "_(value);\t _ Seq",
-            "contents": "_(${1:value});$0"
-    },
+            "trigger": "ld(value)\t _ Seq",
+            "contents": "_(value)$0"
+        },
         {
-            "trigger": "ld.chain(value);\t _ Seq",
-            "contents": "_.chain(${1:value});$0"
-    },
+            "trigger": "ld.chain(value)\t _ Seq",
+            "contents": "_.chain(${1:value})$0"
+        },
         {
-            "trigger": "ld.tap(value);\t _ Seq",
-            "contents": "_.tap(${1:value});$0"
-    },
+            "trigger": "ld.tap(value, interceptor)\t _ Seq",
+            "contents": "_.tap(value, interceptor)$0"
+        },
         {
-            "trigger": "ld.tap(value, interceptor);\t _ Seq",
-            "contents": "_.tap(${1:value}, ${2:interceptor});$0"
-    },
+            "trigger": "ld.thru(value, interceptor)\t _ Seq",
+            "contents": "_.thru(value, interceptor)$0"
+        },
         {
-            "trigger": "ld.thru(value);\t _ Seq",
-            "contents": "_.thru(${1:value});$0"
-    },
+            "trigger": "ld.prototype.Symbol.iterator()\t _ Seq",
+            "contents": "_.prototype.Symbol.iterator()$0"
+        },
         {
-            "trigger": "ld.thru(value, interceptor);\t _ Seq",
-            "contents": "_.thru(${1:value}, ${2:interceptor});$0"
-    },
-        {
-            "trigger": "ld.prototype.flatMap([iteratee=_.identity]);\t _ Seq",
-            "contents": "_.prototype.flatMap(${1:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.prototype.flatMap([iteratee=_.identity]);\t _ Seq",
-            "contents": "_.prototype.flatMap(${1:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.prototype[Symbol.iterator]()\t _ Seq",
-            "contents": "_.prototype[Symbol.iterator]()$0"
-    },
-        {
-            "trigger": "ld.prototype.at([paths]);\t _ Seq",
-            "contents": "_.prototype.at(${1:[paths]});$0"
-    },
+            "trigger": "ld.prototype.at([paths])\t _ Seq",
+            "contents": "_.prototype.at(${1:[paths]})$0"
+        },
         {
             "trigger": "ld.prototype.chain()\t _ Seq",
             "contents": "_.prototype.chain()$0"
-    },
+        },
         {
             "trigger": "ld.prototype.commit()\t _ Seq",
             "contents": "_.prototype.commit()$0"
-    },
+        },
+        {
+            "trigger": "ld.prototype.flatMap([iteratee=_.identity])\t _ Seq",
+            "contents": "_.prototype.flatMap(${1:[iteratee=_.identity]})$0"
+        },
         {
             "trigger": "ld.prototype.next()\t _ Seq",
             "contents": "_.prototype.next()$0"
-    },
+        },
         {
-            "trigger": "ld.prototype.plant(value);\t _ Seq",
-            "contents": "_.prototype.plant(${1:value});$0"
-    },
+            "trigger": "ld.prototype.plant(value)\t _ Seq",
+            "contents": "_.prototype.plant(${1:value})$0"
+        },
         {
             "trigger": "ld.prototype.reverse()\t _ Seq",
             "contents": "_.prototype.reverse()$0"
-    },
+        },
         {
             "trigger": "ld.prototype.value()\t _ Seq",
             "contents": "_.prototype.value()$0"
-    },
-        {
-            "trigger": "ld.prototype.value()\t _ Seq",
-            "contents": "_.prototype.value()$0"
-    },
-        {
-            "trigger": "ld.prototype.value()\t _ Seq",
-            "contents": "_.prototype.value()$0"
-    }
-  ]
+        }
+    ]
 }

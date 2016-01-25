@@ -1,213 +1,97 @@
 {
-    "scope": "source.js - variable.other.js",
+    "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.countBy(collection);\t _ Collection",
-            "contents": "_.countBy(${1:collection});$0"
-    },
+            "trigger": "ld.countBy(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.countBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.countBy(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.countBy(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.every(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.every(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEach(collection);\t _ Collection",
-            "contents": "_.forEach(${1:collection});$0"
-    },
+            "trigger": "ld.filter(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.filter(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEach(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.find(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.find(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEachRight(collection);\t _ Collection",
-            "contents": "_.forEachRight(${1:collection});$0"
-    },
+            "trigger": "ld.findLast(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.findLast(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEachRight(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.forEachRight(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.forEach(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.every(collection);\t _ Collection",
-            "contents": "_.every(${1:collection});$0"
-    },
+            "trigger": "ld.forEachRight(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.every(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.every(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
+            "trigger": "ld.groupBy(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.groupBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.filter(collection);\t _ Collection",
-            "contents": "_.filter(${1:collection});$0"
-    },
+            "trigger": "ld.includes(collection, value, [fromIndex=0])\t _ Collection",
+            "contents": "_.includes(${1:collection}, ${2:value}, ${3:[fromIndex=0]})$0"
+        },
         {
-            "trigger": "ld.filter(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.filter(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
+            "trigger": "ld.invokeMap(collection, path, [args])\t _ Collection",
+            "contents": "_.invokeMap(${1:collection}, ${2:path}, ${3:[args]})$0"
+        },
         {
-            "trigger": "ld.find(collection);\t _ Collection",
-            "contents": "_.find(${1:collection});$0"
-    },
+            "trigger": "ld.keyBy(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.keyBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.find(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.find(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
+            "trigger": "ld.map(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.map(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
         {
-            "trigger": "ld.findLast(collection);\t _ Collection",
-            "contents": "_.findLast(${1:collection});$0"
-    },
+            "trigger": "ld.orderBy(collection, [iteratees=[_.identity]], [orders])\t _ Collection",
+            "contents": "_.orderBy(collection, [iteratees=[_.identity]], [orders])$0"
+        },
         {
-            "trigger": "ld.findLast(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.findLast(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
+            "trigger": "ld.partition(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.partition(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEach(collection);\t _ Collection",
-            "contents": "_.forEach(${1:collection});$0"
-    },
+            "trigger": "ld.reduce(collection, [iteratee=_.identity], [accumulator])\t _ Collection",
+            "contents": "_.reduce(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]})$0"
+        },
         {
-            "trigger": "ld.forEach(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.reduceRight(collection, [iteratee=_.identity], [accumulator])\t _ Collection",
+            "contents": "_.reduceRight(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]})$0"
+        },
         {
-            "trigger": "ld.forEachRight(collection);\t _ Collection",
-            "contents": "_.forEachRight(${1:collection});$0"
-    },
+            "trigger": "ld.reject(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.reject(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.forEachRight(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.forEachRight(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.sample(collection)\t _ Collection",
+            "contents": "_.sample(${1:collection})$0"
+        },
         {
-            "trigger": "ld.groupBy(collection);\t _ Collection",
-            "contents": "_.groupBy(${1:collection});$0"
-    },
+            "trigger": "ld.sampleSize(collection, [n=0])\t _ Collection",
+            "contents": "_.sampleSize(${1:collection}, ${2:[n=0]})$0"
+        },
         {
-            "trigger": "ld.groupBy(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.groupBy(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
+            "trigger": "ld.shuffle(collection)\t _ Collection",
+            "contents": "_.shuffle(${1:collection})$0"
+        },
         {
-            "trigger": "ld.includes(collection);\t _ Collection",
-            "contents": "_.includes(${1:collection});$0"
-    },
+            "trigger": "ld.size(collection)\t _ Collection",
+            "contents": "_.size(${1:collection})$0"
+        },
         {
-            "trigger": "ld.includes(collection, value);\t _ Collection",
-            "contents": "_.includes(${1:collection}, ${2:value});$0"
-    },
+            "trigger": "ld.some(collection, [predicate=_.identity])\t _ Collection",
+            "contents": "_.some(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
         {
-            "trigger": "ld.includes(collection, value, [fromIndex=0]);\t _ Collection",
-            "contents": "_.includes(${1:collection}, ${2:value}, ${3:[fromIndex=0]});$0"
-    },
-        {
-            "trigger": "ld.invokeMap(collection);\t _ Collection",
-            "contents": "_.invokeMap(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.invokeMap(collection, path);\t _ Collection",
-            "contents": "_.invokeMap(${1:collection}, ${2:path});$0"
-    },
-        {
-            "trigger": "ld.invokeMap(collection, path, [args]);\t _ Collection",
-            "contents": "_.invokeMap(${1:collection}, ${2:path}, ${3:[args]});$0"
-    },
-        {
-            "trigger": "ld.keyBy(collection);\t _ Collection",
-            "contents": "_.keyBy(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.keyBy(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.keyBy(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.map(collection);\t _ Collection",
-            "contents": "_.map(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.map(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.map(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.orderBy(collection);\t _ Collection",
-            "contents": "_.orderBy(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.orderBy(collection, [iteratees=[_.identity]]);\t _ Collection",
-            "contents": "_.orderBy(${1:collection}, ${2:[iteratees=[_.identity]]});$0"
-    },
-        {
-            "trigger": "ld.orderBy(collection, [iteratees=[_.identity]], [orders]);\t _ Collection",
-            "contents": "_.orderBy(${1:collection}, ${2:[iteratees=[_.identity]]}, ${3:[orders]});$0"
-    },
-        {
-            "trigger": "ld.partition(collection);\t _ Collection",
-            "contents": "_.partition(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.partition(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.partition(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.reduce(collection);\t _ Collection",
-            "contents": "_.reduce(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.reduce(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.reduce(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.reduce(collection, [iteratee=_.identity], [accumulator]);\t _ Collection",
-            "contents": "_.reduce(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]});$0"
-    },
-        {
-            "trigger": "ld.reduceRight(collection);\t _ Collection",
-            "contents": "_.reduceRight(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.reduceRight(collection, [iteratee=_.identity]);\t _ Collection",
-            "contents": "_.reduceRight(${1:collection}, ${2:[iteratee=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.reduceRight(collection, [iteratee=_.identity], [accumulator]);\t _ Collection",
-            "contents": "_.reduceRight(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]});$0"
-    },
-        {
-            "trigger": "ld.reject(collection);\t _ Collection",
-            "contents": "_.reject(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.reject(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.reject(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.sample(collection);\t _ Collection",
-            "contents": "_.sample(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.sampleSize(collection);\t _ Collection",
-            "contents": "_.sampleSize(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.sampleSize(collection, [n=0]);\t _ Collection",
-            "contents": "_.sampleSize(${1:collection}, ${2:[n=0]});$0"
-    },
-        {
-            "trigger": "ld.shuffle(collection);\t _ Collection",
-            "contents": "_.shuffle(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.size(collection);\t _ Collection",
-            "contents": "_.size(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.some(collection);\t _ Collection",
-            "contents": "_.some(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.some(collection, [predicate=_.identity]);\t _ Collection",
-            "contents": "_.some(${1:collection}, ${2:[predicate=_.identity]});$0"
-    },
-        {
-            "trigger": "ld.sortBy(collection);\t _ Collection",
-            "contents": "_.sortBy(${1:collection});$0"
-    },
-        {
-            "trigger": "ld.sortBy(collection, [iteratees=[_.identity]]);\t _ Collection",
-            "contents": "_.sortBy(${1:collection}, ${2:[iteratees=[_.identity]]});$0"
-    }
-  ]
+            "trigger": "ld.sortBy(collection, [iteratees=[_.identity]])\t _ Collection",
+            "contents": "_.sortBy(${1:collection}, ${2:[iteratees=[_.identity]]})$0"
+        }
+    ]
 }

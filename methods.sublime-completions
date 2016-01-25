@@ -1,13 +1,9 @@
 {
-    "scope": "source.js - variable.other.js",
+    "scope": "source.js",
     "completions": [
         {
             "trigger": "ld.templateSettings.imports._\t _ Methods",
             "contents": "_.templateSettings.imports._$0"
-    },
-        {
-            "trigger": "stringSize(string);\t _ Methods",
-            "contents": "stringSize(${1:string});$0"
-    }
-  ]
+        }
+    ]
 }

@@ -51,7 +51,7 @@
         },
         {
             "trigger": "ld.parseInt(string, [radix])\t _ String",
-            "contents": "_.parseInt(string, [radix])$0"
+            "contents": "_.parseInt(${1:string}, ${2:[radix]})$0"
         },
         {
             "trigger": "ld.repeat([string=''], [n=0])\t _ String",
@@ -79,7 +79,7 @@
         },
         {
             "trigger": "ld.template([string=''], [options])\t _ String",
-            "contents": "_.template([string=''], [options])$0"
+            "contents": "_.template(${1:[string='']}, ${2:[options]})$0"
         },
         {
             "trigger": "ld.toLower([string=''])\t _ String",
@@ -103,7 +103,7 @@
         },
         {
             "trigger": "ld.truncate([string=''], [options])\t _ String",
-            "contents": "_.truncate([string=''], [options])$0"
+            "contents": "_.truncate(${1:[string='']}, ${2:[options]})$0"
         },
         {
             "trigger": "ld.unescape([string=''])\t _ String",

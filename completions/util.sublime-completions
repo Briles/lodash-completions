@@ -55,7 +55,7 @@
         },
         {
             "trigger": "ld.mixin([object=lodash], source, [options])\t _ Util",
-            "contents": "_.mixin([object=lodash], source, [options])$0"
+            "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options]})$0"
         },
         {
             "trigger": "ld.noConflict()\t _ Util",
@@ -103,7 +103,7 @@
         },
         {
             "trigger": "ld.times(n, [iteratee=_.identity])\t _ Util",
-            "contents": "_.times(n, [iteratee=_.identity])$0"
+            "contents": "_.times(${1:n}, ${2:[iteratee=_.identity]})$0"
         },
         {
             "trigger": "ld.toPath(value)\t _ Util",

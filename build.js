@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   const request = require('request');
@@ -8,10 +8,11 @@
   const path = require('path');
   const fs = require('fs');
 
-  var writeCompletions = function(filename, contents) {
-    var destPath = path.join(__dirname, '/completions/', filename.toLowerCase() + '.sublime-completions');
+  var writeCompletions = function (filename, contents) {
+    filename = filename.toLowerCase();
+    var destPath = path.join(__dirname, '/completions/', filename + '.sublime-completions');
 
-    fs.writeFile(destPath, JSON.stringify(contents, null, 4), function(err) {
+    fs.writeFile(destPath, JSON.stringify(contents, null, 4), function (err) {
       if (err) {
         return console.log(err);
       }
@@ -20,14 +21,14 @@
     });
   };
 
-  var getDocumentationUrl = function(version) {
+  var getDocumentationUrl = function (version) {
     return 'https://raw.githubusercontent.com/lodash/lodash/#/doc/README.md'.replace('#', version);
   };
 
-  var getDocumentation = function(callback) {
+  var getDocumentation = function (callback) {
     var url = getDocumentationUrl(commander.tag);
 
-    request(url, function(error, response, body) {
+    request(url, function (error, response, body) {
       if (!error && response.statusCode === 200) {
         callback(marked(body));
       } else if (response.statusCode === 404) {
@@ -36,10 +37,10 @@
     });
   };
 
-  var parseDocumentation = function(html) {
+  var parseDocumentation = function (html) {
     var $ = cheerio.load(html);
 
-    $('h2').each(function() {
+    $('h2').each(function () {
       if ($(this).next().is('h3')) {
         var completionsData = {
           scope: 'source.js',
@@ -49,29 +50,31 @@
         var group = $(this).text().replace(/(“|” Methods)/gi, '').trim();
 
         var codeSnippets = $(this).nextUntil('h2', 'h3');
-        codeSnippets.each(function() {
-          var completion = {};
-
-          var trigger = $(this).text();
+        codeSnippets.each(function () {
+          var trigger = $(this).text().trim();
+          var hasParams = trigger.match(/(?=\(([^)]+)\))/g);
+          var contents = trigger;
 
           if (trigger[0] === '_') {
             var len = trigger.length;
             trigger = commander.namespace + trigger.substring(1, len);
           }
 
-          completion.trigger = trigger + '\t _ ' + group;
+          if (hasParams) {
 
-          var tabParams = [];
-          var params = $(this).nextUntil('ol').next().find('li').map(function(i, el) {
-            el = $(this).find('code').text();
-            tabParams.push('${' + (i + 1) + ':' + el + '}');
+            $(this).nextUntil('ol').next().children('li').each(function (i) {
+              i = i + 1;
+              var code = $(this).children('code').first().text();
+              contents = contents.replace(code, '${' + i + ':' + code + '}');
+            });
 
-            return el;
-          }).get();
+          }
 
-          tabParams = tabParams.join(', ');
+          var completion = {
+            trigger: trigger + '\t _ ' + group,
+            contents: contents + '$0',
+          };
 
-          completion.contents = $(this).text().replace(params.join(', '), tabParams) + '$0';
           completionsData.completions.push(completion);
         });
 

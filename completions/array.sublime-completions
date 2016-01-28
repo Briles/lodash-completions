@@ -43,7 +43,7 @@
         },
         {
             "trigger": "ld.fill(array, value, [start=0], [end=array.length])\t _ Array",
-            "contents": "_.fill(array, value, [start=0], [end=array.length])$0"
+            "contents": "_.fill(${1:array}, ${2:value}, ${3:[start=0]}, ${4:[end=array.length]})$0"
         },
         {
             "trigger": "ld.findIndex(array, [predicate=_.identity])\t _ Array",

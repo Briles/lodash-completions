@@ -51,7 +51,7 @@
         },
         {
             "trigger": "ld.orderBy(collection, [iteratees=[_.identity]], [orders])\t _ Collection",
-            "contents": "_.orderBy(collection, [iteratees=[_.identity]], [orders])$0"
+            "contents": "_.orderBy(${1:collection}, ${2:[iteratees=[_.identity]]}, ${3:[orders]})$0"
         },
         {
             "trigger": "ld.partition(collection, [predicate=_.identity])\t _ Collection",

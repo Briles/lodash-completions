@@ -67,7 +67,7 @@
         },
         {
             "trigger": "ld.get(object, path, [defaultValue])\t _ Object",
-            "contents": "_.get(object, path, [defaultValue])$0"
+            "contents": "_.get(${1:object}, ${2:path}, ${3:[defaultValue]})$0"
         },
         {
             "trigger": "ld.has(object, path)\t _ Object",
@@ -131,7 +131,7 @@
         },
         {
             "trigger": "ld.result(object, path, [defaultValue])\t _ Object",
-            "contents": "_.result(object, path, [defaultValue])$0"
+            "contents": "_.result(${1:object}, ${2:path}, ${3:[defaultValue]})$0"
         },
         {
             "trigger": "ld.set(object, path, value)\t _ Object",

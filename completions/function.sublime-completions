@@ -78,8 +78,8 @@
             "contents": "_.rest(${1:func}, ${2:[start=func.length-1]})$0"
         },
         {
-            "trigger": "ld.spread(func)\t _ Function",
-            "contents": "_.spread(${1:func})$0"
+            "trigger": "ld.spread(func, [start=0])\t _ Function",
+            "contents": "_.spread(${1:func}, ${2:[start=0]})$0"
         },
         {
             "trigger": "ld.throttle(func, [wait=0], [options])\t _ Function",

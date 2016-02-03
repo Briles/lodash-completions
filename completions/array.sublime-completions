@@ -54,10 +54,6 @@
             "contents": "_.findLastIndex(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.flatMap(array, [iteratee=_.identity])\t _ Array",
-            "contents": "_.flatMap(${1:array}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
             "trigger": "ld.flatten(array)\t _ Array",
             "contents": "_.flatten(${1:array})$0"
         },

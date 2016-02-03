@@ -22,6 +22,10 @@
             "contents": "_.findLast(${1:collection}, ${2:[predicate=_.identity]})$0"
         },
         {
+            "trigger": "ld.flatMap(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.flatMap(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
             "trigger": "ld.forEach(collection, [iteratee=_.identity])\t _ Collection",
             "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
         },

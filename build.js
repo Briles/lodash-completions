@@ -8,6 +8,9 @@
   const path = require('path');
   const fs = require('fs');
 
+  var numCompletionsWritten = 0;
+  var lodash = {};
+
   var writeCompletions = function (filename, contents) {
     filename = filename.toLowerCase();
     var destPath = path.join(__dirname, '/completions/', filename + '.sublime-completions');
@@ -18,6 +21,21 @@
       }
 
       console.log('Completions saved to "' + destPath + '"');
+    });
+
+    numCompletionsWritten += 1;
+  };
+
+  var writeReadme = function () {
+    var md = '### [lodash](' + lodash.href + ') ' + lodash.version + ' completions for Sublime Text 3\n\n![usage](example.gif)\n';
+    var mdPath = path.join(__dirname, 'README.md');
+
+    fs.writeFile(mdPath, md, function (err) {
+      if (err) {
+        return console.log(err);
+      }
+
+      console.log('README.md updated to ' + lodash.version);
     });
   };
 
@@ -39,9 +57,14 @@
 
   var parseDocumentation = function (html) {
     var $ = cheerio.load(html);
+    var numCompletions = 0;
+    lodash.version = $('span').first().text().replace('v', '').trim();
+    lodash.href = $('a').first().attr('href').trim();
 
     $('h2').each(function () {
       if ($(this).next().is('h3')) {
+        numCompletions += 1;
+
         var completionsData = {
           scope: 'source.js',
           completions: [],
@@ -81,6 +104,10 @@
         writeCompletions(group, completionsData);
       }
     });
+
+    if (numCompletions === numCompletionsWritten) {
+      writeReadme();
+    }
   };
 
   commander

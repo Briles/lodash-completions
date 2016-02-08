@@ -38,6 +38,10 @@
             "contents": "_.isArray(${1:value})$0"
         },
         {
+            "trigger": "ld.isArrayBuffer(value)\t _ Lang",
+            "contents": "_.isArrayBuffer(${1:value})$0"
+        },
+        {
             "trigger": "ld.isArrayLike(value)\t _ Lang",
             "contents": "_.isArrayLike(${1:value})$0"
         },
@@ -48,6 +52,10 @@
         {
             "trigger": "ld.isBoolean(value)\t _ Lang",
             "contents": "_.isBoolean(${1:value})$0"
+        },
+        {
+            "trigger": "ld.isBuffer(value)\t _ Lang",
+            "contents": "_.isBuffer(${1:value})$0"
         },
         {
             "trigger": "ld.isDate(value)\t _ Lang",
@@ -88,6 +96,10 @@
         {
             "trigger": "ld.isLength(value)\t _ Lang",
             "contents": "_.isLength(${1:value})$0"
+        },
+        {
+            "trigger": "ld.isMap(value)\t _ Lang",
+            "contents": "_.isMap(${1:value})$0"
         },
         {
             "trigger": "ld.isMatch(object, source)\t _ Lang",
@@ -138,6 +150,10 @@
             "contents": "_.isSafeInteger(${1:value})$0"
         },
         {
+            "trigger": "ld.isSet(value)\t _ Lang",
+            "contents": "_.isSet(${1:value})$0"
+        },
+        {
             "trigger": "ld.isString(value)\t _ Lang",
             "contents": "_.isString(${1:value})$0"
         },
@@ -152,6 +168,14 @@
         {
             "trigger": "ld.isUndefined(value)\t _ Lang",
             "contents": "_.isUndefined(${1:value})$0"
+        },
+        {
+            "trigger": "ld.isWeakMap(value)\t _ Lang",
+            "contents": "_.isWeakMap(${1:value})$0"
+        },
+        {
+            "trigger": "ld.isWeakSet(value)\t _ Lang",
+            "contents": "_.isWeakSet(${1:value})$0"
         },
         {
             "trigger": "ld.lt(value, other)\t _ Lang",

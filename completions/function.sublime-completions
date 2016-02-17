@@ -90,8 +90,8 @@
             "contents": "_.unary(${1:func})$0"
         },
         {
-            "trigger": "ld.wrap(value, wrapper)\t _ Function",
-            "contents": "_.wrap(${1:value}, ${2:wrapper})$0"
+            "trigger": "ld.wrap(value, [wrapper=identity])\t _ Function",
+            "contents": "_.wrap(${1:value}, ${2:[wrapper=identity]})$0"
         }
     ]
 }

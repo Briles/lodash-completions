@@ -110,8 +110,8 @@
             "contents": "_.toPath(${1:value})$0"
         },
         {
-            "trigger": "ld.uniqueId([prefix])\t _ Util",
-            "contents": "_.uniqueId(${1:[prefix]})$0"
+            "trigger": "ld.uniqueId([prefix=''])\t _ Util",
+            "contents": "_.uniqueId(${1:[prefix='']})$0"
         }
     ]
 }

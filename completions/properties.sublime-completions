@@ -22,6 +22,10 @@
             "contents": "_.templateSettings.imports$0"
         },
         {
+            "trigger": "ld.templateSettings.imports._\t _ Properties",
+            "contents": "_.templateSettings.imports._$0"
+        },
+        {
             "trigger": "ld.templateSettings.interpolate\t _ Properties",
             "contents": "_.templateSettings.interpolate$0"
         },

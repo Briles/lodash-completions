@@ -2,6 +2,10 @@
     "scope": "source.js",
     "completions": [
         {
+            "trigger": "ld.castArray(value)\t _ Lang",
+            "contents": "_.castArray(${1:value})$0"
+        },
+        {
             "trigger": "ld.clone(value)\t _ Lang",
             "contents": "_.clone(${1:value})$0"
         },

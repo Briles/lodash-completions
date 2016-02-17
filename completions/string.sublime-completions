@@ -50,8 +50,8 @@
             "contents": "_.padStart(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
         },
         {
-            "trigger": "ld.parseInt(string, [radix])\t _ String",
-            "contents": "_.parseInt(${1:string}, ${2:[radix]})$0"
+            "trigger": "ld.parseInt(string, [radix=10])\t _ String",
+            "contents": "_.parseInt(${1:string}, ${2:[radix=10]})$0"
         },
         {
             "trigger": "ld.repeat([string=''], [n=0])\t _ String",
@@ -102,8 +102,8 @@
             "contents": "_.trimStart(${1:[string='']}, ${2:[chars=whitespace]})$0"
         },
         {
-            "trigger": "ld.truncate([string=''], [options])\t _ String",
-            "contents": "_.truncate(${1:[string='']}, ${2:[options]})$0"
+            "trigger": "ld.truncate([string=''], [options=({})], [options.length=30], [options.omission='...'], [options.separator])\t _ String",
+            "contents": "_.truncate(${1:[string='']}, ${2:[options=({})]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
         },
         {
             "trigger": "ld.unescape([string=''])\t _ String",

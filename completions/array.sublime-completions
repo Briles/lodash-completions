@@ -62,6 +62,10 @@
             "contents": "_.flattenDeep(${1:array})$0"
         },
         {
+            "trigger": "ld.flattenDepth(array, [depth=1])\t _ Array",
+            "contents": "_.flattenDepth(${1:array}, ${2:[depth=1]})$0"
+        },
+        {
             "trigger": "ld.fromPairs(pairs)\t _ Array",
             "contents": "_.fromPairs(${1:pairs})$0"
         },

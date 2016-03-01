@@ -118,6 +118,10 @@
             "contents": "_.pullAllBy(${1:array}, ${2:values}, ${3:[iteratee=_.identity]})$0"
         },
         {
+            "trigger": "ld.pullAllWith(array, values, [comparator])\t _ Array",
+            "contents": "_.pullAllWith(${1:array}, ${2:values}, ${3:[comparator]})$0"
+        },
+        {
             "trigger": "ld.pullAt(array, [indexes])\t _ Array",
             "contents": "_.pullAt(${1:array}, ${2:[indexes]})$0"
         },

@@ -158,6 +158,14 @@
             "contents": "_.unset(${1:object}, ${2:path})$0"
         },
         {
+            "trigger": "ld.update(object, path, updater)\t _ Object",
+            "contents": "_.update(${1:object}, ${2:path}, ${3:updater})$0"
+        },
+        {
+            "trigger": "ld.updateWith(object, path, updater, [customizer])\t _ Object",
+            "contents": "_.updateWith(${1:object}, ${2:path}, ${3:updater}, ${4:[customizer]})$0"
+        },
+        {
             "trigger": "ld.values(object)\t _ Object",
             "contents": "_.values(${1:object})$0"
         },

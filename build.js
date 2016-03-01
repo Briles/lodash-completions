@@ -27,7 +27,7 @@
   };
 
   var writeReadme = function () {
-    var md = '### [lodash](' + lodash.href + ') ' + lodash.version + ' completions for Sublime Text 3\n\n![usage](example.gif)\n';
+    var md = '### [lodash](' + lodash.href + ') ' + lodash.version + ' completions for Sublime Text 3\n\n![usage](http://i.imgur.com/NBUV56j.gif)\n';
     var mdPath = path.join(__dirname, 'README.md');
 
     fs.writeFile(mdPath, md, function (err) {

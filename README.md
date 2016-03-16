@@ -1,3 +1,3 @@
 ### [lodash](https://lodash.com/) 4.6.1 completions for Sublime Text 3
 
-![usage](http://i.imgur.com/NBUV56j.gif)
+![usage](http://i.imgur.com/LZLqAbm.gifv)

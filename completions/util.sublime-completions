@@ -2,8 +2,8 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.attempt(func)\t _ Util",
-            "contents": "_.attempt(${1:func})$0"
+            "trigger": "ld.attempt(func, [args])\t _ Util",
+            "contents": "_.attempt(${1:func}, ${2:[args]})$0"
         },
         {
             "trigger": "ld.bindAll(object, methodNames)\t _ Util",
@@ -54,8 +54,8 @@
             "contents": "_.methodOf(${1:object}, ${2:[args]})$0"
         },
         {
-            "trigger": "ld.mixin([object=lodash], source, [options])\t _ Util",
-            "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options]})$0"
+            "trigger": "ld.mixin([object=lodash], source, [options={}], [options.chain=true])\t _ Util",
+            "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]}, ${4:[options.chain=true]})$0"
         },
         {
             "trigger": "ld.noConflict()\t _ Util",

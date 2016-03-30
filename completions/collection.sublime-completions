@@ -26,6 +26,14 @@
             "contents": "_.flatMap(${1:collection}, ${2:[iteratee=_.identity]})$0"
         },
         {
+            "trigger": "ld.flatMapDeep(collection, [iteratee=_.identity])\t _ Collection",
+            "contents": "_.flatMapDeep(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.flatMapDepth(collection, [iteratee=_.identity], [depth=1])\t _ Collection",
+            "contents": "_.flatMapDepth(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[depth=1]})$0"
+        },
+        {
             "trigger": "ld.forEach(collection, [iteratee=_.identity])\t _ Collection",
             "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
         },

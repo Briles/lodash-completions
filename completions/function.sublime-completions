@@ -30,8 +30,8 @@
             "contents": "_.curryRight(${1:func}, ${2:[arity=func.length]})$0"
         },
         {
-            "trigger": "ld.debounce(func, [wait=0], [options])\t _ Function",
-            "contents": "_.debounce(${1:func}, ${2:[wait=0]}, ${3:[options]})$0"
+            "trigger": "ld.debounce(func, [wait=0], [options={}], [options.leading=false], [options.maxWait], [options.trailing=true])\t _ Function",
+            "contents": "_.debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=false]}, ${5:[options.maxWait]}, ${6:[options.trailing=true]})$0"
         },
         {
             "trigger": "ld.defer(func, [args])\t _ Function",
@@ -82,8 +82,8 @@
             "contents": "_.spread(${1:func}, ${2:[start=0]})$0"
         },
         {
-            "trigger": "ld.throttle(func, [wait=0], [options])\t _ Function",
-            "contents": "_.throttle(${1:func}, ${2:[wait=0]}, ${3:[options]})$0"
+            "trigger": "ld.throttle(func, [wait=0], [options={}], [options.leading=true], [options.trailing=true])\t _ Function",
+            "contents": "_.throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=true]}, ${5:[options.trailing=true]})$0"
         },
         {
             "trigger": "ld.unary(func)\t _ Function",

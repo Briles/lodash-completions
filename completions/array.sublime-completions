@@ -130,8 +130,8 @@
             "contents": "_.remove(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.reverse()\t _ Array",
-            "contents": "_.reverse()$0"
+            "trigger": "ld.reverse(array)\t _ Array",
+            "contents": "_.reverse(${1:array})$0"
         },
         {
             "trigger": "ld.slice(array, [start=0], [end=array.length])\t _ Array",

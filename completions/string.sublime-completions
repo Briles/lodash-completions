@@ -78,8 +78,8 @@
             "contents": "_.startsWith(${1:[string='']}, ${2:[target]}, ${3:[position=0]})$0"
         },
         {
-            "trigger": "ld.template([string=''], [options])\t _ String",
-            "contents": "_.template(${1:[string='']}, ${2:[options]})$0"
+            "trigger": "ld.template([string=''], [options={}], [options.escape=_.templateSettings.escape], [options.evaluate=_.templateSettings.evaluate], [options.imports=_.templateSettings.imports], [options.interpolate=_.templateSettings.interpolate], [options.sourceURL='lodash.templateSources[n]'], [options.variable='obj'])\t _ String",
+            "contents": "_.template(${1:[string='']}, ${2:[options={}]}, ${3:[options.escape=_.templateSettings.escape]}, ${4:[options.evaluate=_.templateSettings.evaluate]}, ${5:[options.imports=_.templateSettings.imports]}, ${6:[options.interpolate=_.templateSettings.interpolate]}, ${7:[options.sourceURL='lodash.templateSources[n]']}, ${8:[options.variable='obj']})$0"
         },
         {
             "trigger": "ld.toLower([string=''])\t _ String",
@@ -102,8 +102,8 @@
             "contents": "_.trimStart(${1:[string='']}, ${2:[chars=whitespace]})$0"
         },
         {
-            "trigger": "ld.truncate([string=''], [options=({})], [options.length=30], [options.omission='...'], [options.separator])\t _ String",
-            "contents": "_.truncate(${1:[string='']}, ${2:[options=({})]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
+            "trigger": "ld.truncate([string=''], [options={}], [options.length=30], [options.omission='...'], [options.separator])\t _ String",
+            "contents": "_.truncate(${1:[string='']}, ${2:[options={}]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
         },
         {
             "trigger": "ld.unescape([string=''])\t _ String",

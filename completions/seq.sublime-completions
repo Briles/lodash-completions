@@ -34,10 +34,6 @@
             "contents": "_.prototype.commit()$0"
         },
         {
-            "trigger": "ld.prototype.flatMap([iteratee=_.identity])\t _ Seq",
-            "contents": "_.prototype.flatMap(${1:[iteratee=_.identity]})$0"
-        },
-        {
             "trigger": "ld.prototype.next()\t _ Seq",
             "contents": "_.prototype.next()$0"
         },

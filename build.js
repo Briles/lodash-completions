@@ -55,6 +55,7 @@
         var codeSnippets = $(this).nextUntil('h2', 'h3');
         codeSnippets.each(function () {
           var trigger = $(this).text().trim();
+
           var hasParams = trigger.match(/(?=\(([^)]+)\))/g);
           var contents = trigger;
 
@@ -64,6 +65,10 @@
           }
 
           if (hasParams) {
+
+            if (commander.omitParams) {
+              trigger = trigger.replace(/(\([^)]*\))/g, '()');
+            }
 
             $(this).nextUntil('ol').next().children('li').each(function (i) {
               i = i + 1;
@@ -91,6 +96,7 @@
     .usage('Generates completions for lodash using "' + getDocumentationUrl('master') + '"')
     .option('-t --tag [tag]', 'lodash version to fetch', 'master')
     .option('-n --namespace [namespace]', 'namespace to use in place of _', 'ld')
+    .option('-o --omit-params [omitParams]', 'don\'t write params within triggers', false)
     .parse(process.argv);
 
   getDocumentation(parseDocumentation);

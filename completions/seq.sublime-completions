@@ -2,19 +2,19 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld(value)\t _ Seq",
+            "trigger": "ld()\t _ Seq",
             "contents": "_(${1:value})$0"
         },
         {
-            "trigger": "ld.chain(value)\t _ Seq",
+            "trigger": "ld.chain()\t _ Seq",
             "contents": "_.chain(${1:value})$0"
         },
         {
-            "trigger": "ld.tap(value, interceptor)\t _ Seq",
+            "trigger": "ld.tap()\t _ Seq",
             "contents": "_.tap(${1:value}, ${2:interceptor})$0"
         },
         {
-            "trigger": "ld.thru(value, interceptor)\t _ Seq",
+            "trigger": "ld.thru()\t _ Seq",
             "contents": "_.thru(${1:value}, ${2:interceptor})$0"
         },
         {
@@ -22,7 +22,7 @@
             "contents": "_.prototype[Symbol.iterator]()$0"
         },
         {
-            "trigger": "ld.prototype.at([paths])\t _ Seq",
+            "trigger": "ld.prototype.at()\t _ Seq",
             "contents": "_.prototype.at(${1:[paths]})$0"
         },
         {
@@ -38,7 +38,7 @@
             "contents": "_.prototype.next()$0"
         },
         {
-            "trigger": "ld.prototype.plant(value)\t _ Seq",
+            "trigger": "ld.prototype.plant()\t _ Seq",
             "contents": "_.prototype.plant(${1:value})$0"
         },
         {

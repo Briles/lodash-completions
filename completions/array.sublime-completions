@@ -2,255 +2,255 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.chunk(array, [size=0])\t _ Array",
+            "trigger": "ld.chunk()\t _ Array",
             "contents": "_.chunk(${1:array}, ${2:[size=0]})$0"
         },
         {
-            "trigger": "ld.compact(array)\t _ Array",
+            "trigger": "ld.compact()\t _ Array",
             "contents": "_.compact(${1:array})$0"
         },
         {
-            "trigger": "ld.concat(array, [values])\t _ Array",
+            "trigger": "ld.concat()\t _ Array",
             "contents": "_.concat(${1:array}, ${2:[values]})$0"
         },
         {
-            "trigger": "ld.difference(array, [values])\t _ Array",
+            "trigger": "ld.difference()\t _ Array",
             "contents": "_.difference(${1:array}, ${2:[values]})$0"
         },
         {
-            "trigger": "ld.differenceBy(array, [values], [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.differenceBy()\t _ Array",
             "contents": "_.differenceBy(${1:array}, ${2:[values]}, ${3:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.differenceWith(array, [values], [comparator])\t _ Array",
+            "trigger": "ld.differenceWith()\t _ Array",
             "contents": "_.differenceWith(${1:array}, ${2:[values]}, ${3:[comparator]})$0"
         },
         {
-            "trigger": "ld.drop(array, [n=1])\t _ Array",
+            "trigger": "ld.drop()\t _ Array",
             "contents": "_.drop(${1:array}, ${2:[n=1]})$0"
         },
         {
-            "trigger": "ld.dropRight(array, [n=1])\t _ Array",
+            "trigger": "ld.dropRight()\t _ Array",
             "contents": "_.dropRight(${1:array}, ${2:[n=1]})$0"
         },
         {
-            "trigger": "ld.dropRightWhile(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.dropRightWhile()\t _ Array",
             "contents": "_.dropRightWhile(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.dropWhile(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.dropWhile()\t _ Array",
             "contents": "_.dropWhile(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.fill(array, value, [start=0], [end=array.length])\t _ Array",
+            "trigger": "ld.fill()\t _ Array",
             "contents": "_.fill(${1:array}, ${2:value}, ${3:[start=0]}, ${4:[end=array.length]})$0"
         },
         {
-            "trigger": "ld.findIndex(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.findIndex()\t _ Array",
             "contents": "_.findIndex(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.findLastIndex(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.findLastIndex()\t _ Array",
             "contents": "_.findLastIndex(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.flatten(array)\t _ Array",
+            "trigger": "ld.flatten()\t _ Array",
             "contents": "_.flatten(${1:array})$0"
         },
         {
-            "trigger": "ld.flattenDeep(array)\t _ Array",
+            "trigger": "ld.flattenDeep()\t _ Array",
             "contents": "_.flattenDeep(${1:array})$0"
         },
         {
-            "trigger": "ld.flattenDepth(array, [depth=1])\t _ Array",
+            "trigger": "ld.flattenDepth()\t _ Array",
             "contents": "_.flattenDepth(${1:array}, ${2:[depth=1]})$0"
         },
         {
-            "trigger": "ld.fromPairs(pairs)\t _ Array",
+            "trigger": "ld.fromPairs()\t _ Array",
             "contents": "_.fromPairs(${1:pairs})$0"
         },
         {
-            "trigger": "ld.head(array)\t _ Array",
+            "trigger": "ld.head()\t _ Array",
             "contents": "_.head(${1:array})$0"
         },
         {
-            "trigger": "ld.indexOf(array, value, [fromIndex=0])\t _ Array",
+            "trigger": "ld.indexOf()\t _ Array",
             "contents": "_.indexOf(${1:array}, ${2:value}, ${3:[fromIndex=0]})$0"
         },
         {
-            "trigger": "ld.initial(array)\t _ Array",
+            "trigger": "ld.initial()\t _ Array",
             "contents": "_.initial(${1:array})$0"
         },
         {
-            "trigger": "ld.intersection([arrays])\t _ Array",
+            "trigger": "ld.intersection()\t _ Array",
             "contents": "_.intersection(${1:[arrays]})$0"
         },
         {
-            "trigger": "ld.intersectionBy([arrays], [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.intersectionBy()\t _ Array",
             "contents": "_.intersectionBy(${1:[arrays]}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.intersectionWith([arrays], [comparator])\t _ Array",
+            "trigger": "ld.intersectionWith()\t _ Array",
             "contents": "_.intersectionWith(${1:[arrays]}, ${2:[comparator]})$0"
         },
         {
-            "trigger": "ld.join(array, [separator=','])\t _ Array",
+            "trigger": "ld.join()\t _ Array",
             "contents": "_.join(${1:array}, ${2:[separator=',']})$0"
         },
         {
-            "trigger": "ld.last(array)\t _ Array",
+            "trigger": "ld.last()\t _ Array",
             "contents": "_.last(${1:array})$0"
         },
         {
-            "trigger": "ld.lastIndexOf(array, value, [fromIndex=array.length-1])\t _ Array",
+            "trigger": "ld.lastIndexOf()\t _ Array",
             "contents": "_.lastIndexOf(${1:array}, ${2:value}, ${3:[fromIndex=array.length-1]})$0"
         },
         {
-            "trigger": "ld.pull(array, [values])\t _ Array",
+            "trigger": "ld.pull()\t _ Array",
             "contents": "_.pull(${1:array}, ${2:[values]})$0"
         },
         {
-            "trigger": "ld.pullAll(array, values)\t _ Array",
+            "trigger": "ld.pullAll()\t _ Array",
             "contents": "_.pullAll(${1:array}, ${2:values})$0"
         },
         {
-            "trigger": "ld.pullAllBy(array, values, [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.pullAllBy()\t _ Array",
             "contents": "_.pullAllBy(${1:array}, ${2:values}, ${3:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.pullAllWith(array, values, [comparator])\t _ Array",
+            "trigger": "ld.pullAllWith()\t _ Array",
             "contents": "_.pullAllWith(${1:array}, ${2:values}, ${3:[comparator]})$0"
         },
         {
-            "trigger": "ld.pullAt(array, [indexes])\t _ Array",
+            "trigger": "ld.pullAt()\t _ Array",
             "contents": "_.pullAt(${1:array}, ${2:[indexes]})$0"
         },
         {
-            "trigger": "ld.remove(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.remove()\t _ Array",
             "contents": "_.remove(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.reverse(array)\t _ Array",
+            "trigger": "ld.reverse()\t _ Array",
             "contents": "_.reverse(${1:array})$0"
         },
         {
-            "trigger": "ld.slice(array, [start=0], [end=array.length])\t _ Array",
+            "trigger": "ld.slice()\t _ Array",
             "contents": "_.slice(${1:array}, ${2:[start=0]}, ${3:[end=array.length]})$0"
         },
         {
-            "trigger": "ld.sortedIndex(array, value)\t _ Array",
+            "trigger": "ld.sortedIndex()\t _ Array",
             "contents": "_.sortedIndex(${1:array}, ${2:value})$0"
         },
         {
-            "trigger": "ld.sortedIndexBy(array, value, [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.sortedIndexBy()\t _ Array",
             "contents": "_.sortedIndexBy(${1:array}, ${2:value}, ${3:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.sortedIndexOf(array, value)\t _ Array",
+            "trigger": "ld.sortedIndexOf()\t _ Array",
             "contents": "_.sortedIndexOf(${1:array}, ${2:value})$0"
         },
         {
-            "trigger": "ld.sortedLastIndex(array, value)\t _ Array",
+            "trigger": "ld.sortedLastIndex()\t _ Array",
             "contents": "_.sortedLastIndex(${1:array}, ${2:value})$0"
         },
         {
-            "trigger": "ld.sortedLastIndexBy(array, value, [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.sortedLastIndexBy()\t _ Array",
             "contents": "_.sortedLastIndexBy(${1:array}, ${2:value}, ${3:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.sortedLastIndexOf(array, value)\t _ Array",
+            "trigger": "ld.sortedLastIndexOf()\t _ Array",
             "contents": "_.sortedLastIndexOf(${1:array}, ${2:value})$0"
         },
         {
-            "trigger": "ld.sortedUniq(array)\t _ Array",
+            "trigger": "ld.sortedUniq()\t _ Array",
             "contents": "_.sortedUniq(${1:array})$0"
         },
         {
-            "trigger": "ld.sortedUniqBy(array, [iteratee])\t _ Array",
+            "trigger": "ld.sortedUniqBy()\t _ Array",
             "contents": "_.sortedUniqBy(${1:array}, ${2:[iteratee]})$0"
         },
         {
-            "trigger": "ld.tail(array)\t _ Array",
+            "trigger": "ld.tail()\t _ Array",
             "contents": "_.tail(${1:array})$0"
         },
         {
-            "trigger": "ld.take(array, [n=1])\t _ Array",
+            "trigger": "ld.take()\t _ Array",
             "contents": "_.take(${1:array}, ${2:[n=1]})$0"
         },
         {
-            "trigger": "ld.takeRight(array, [n=1])\t _ Array",
+            "trigger": "ld.takeRight()\t _ Array",
             "contents": "_.takeRight(${1:array}, ${2:[n=1]})$0"
         },
         {
-            "trigger": "ld.takeRightWhile(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.takeRightWhile()\t _ Array",
             "contents": "_.takeRightWhile(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.takeWhile(array, [predicate=_.identity])\t _ Array",
+            "trigger": "ld.takeWhile()\t _ Array",
             "contents": "_.takeWhile(${1:array}, ${2:[predicate=_.identity]})$0"
         },
         {
-            "trigger": "ld.union([arrays])\t _ Array",
+            "trigger": "ld.union()\t _ Array",
             "contents": "_.union(${1:[arrays]})$0"
         },
         {
-            "trigger": "ld.unionBy([arrays], [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.unionBy()\t _ Array",
             "contents": "_.unionBy(${1:[arrays]}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.unionWith([arrays], [comparator])\t _ Array",
+            "trigger": "ld.unionWith()\t _ Array",
             "contents": "_.unionWith(${1:[arrays]}, ${2:[comparator]})$0"
         },
         {
-            "trigger": "ld.uniq(array)\t _ Array",
+            "trigger": "ld.uniq()\t _ Array",
             "contents": "_.uniq(${1:array})$0"
         },
         {
-            "trigger": "ld.uniqBy(array, [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.uniqBy()\t _ Array",
             "contents": "_.uniqBy(${1:array}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.uniqWith(array, [comparator])\t _ Array",
+            "trigger": "ld.uniqWith()\t _ Array",
             "contents": "_.uniqWith(${1:array}, ${2:[comparator]})$0"
         },
         {
-            "trigger": "ld.unzip(array)\t _ Array",
+            "trigger": "ld.unzip()\t _ Array",
             "contents": "_.unzip(${1:array})$0"
         },
         {
-            "trigger": "ld.unzipWith(array, [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.unzipWith()\t _ Array",
             "contents": "_.unzipWith(${1:array}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.without(array, [values])\t _ Array",
+            "trigger": "ld.without()\t _ Array",
             "contents": "_.without(${1:array}, ${2:[values]})$0"
         },
         {
-            "trigger": "ld.xor([arrays])\t _ Array",
+            "trigger": "ld.xor()\t _ Array",
             "contents": "_.xor(${1:[arrays]})$0"
         },
         {
-            "trigger": "ld.xorBy([arrays], [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.xorBy()\t _ Array",
             "contents": "_.xorBy(${1:[arrays]}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.xorWith([arrays], [comparator])\t _ Array",
+            "trigger": "ld.xorWith()\t _ Array",
             "contents": "_.xorWith(${1:[arrays]}, ${2:[comparator]})$0"
         },
         {
-            "trigger": "ld.zip([arrays])\t _ Array",
+            "trigger": "ld.zip()\t _ Array",
             "contents": "_.zip(${1:[arrays]})$0"
         },
         {
-            "trigger": "ld.zipObject([props=[]], [values=[]])\t _ Array",
+            "trigger": "ld.zipObject()\t _ Array",
             "contents": "_.zipObject(${1:[props=[]]}, ${2:[values=[]]})$0"
         },
         {
-            "trigger": "ld.zipObjectDeep([props=[]], [values=[]])\t _ Array",
+            "trigger": "ld.zipObjectDeep()\t _ Array",
             "contents": "_.zipObjectDeep(${1:[props=[]]}, ${2:[values=[]]})$0"
         },
         {
-            "trigger": "ld.zipWith([arrays], [iteratee=_.identity])\t _ Array",
+            "trigger": "ld.zipWith()\t _ Array",
             "contents": "_.zipWith(${1:[arrays]}, ${2:[iteratee=_.identity]})$0"
         }
     ]

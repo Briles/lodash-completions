@@ -2,123 +2,123 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.camelCase([string=''])\t _ String",
+            "trigger": "ld.camelCase()\t _ String",
             "contents": "_.camelCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.capitalize([string=''])\t _ String",
+            "trigger": "ld.capitalize()\t _ String",
             "contents": "_.capitalize(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.deburr([string=''])\t _ String",
+            "trigger": "ld.deburr()\t _ String",
             "contents": "_.deburr(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.endsWith([string=''], [target], [position=string.length])\t _ String",
+            "trigger": "ld.endsWith()\t _ String",
             "contents": "_.endsWith(${1:[string='']}, ${2:[target]}, ${3:[position=string.length]})$0"
         },
         {
-            "trigger": "ld.escape([string=''])\t _ String",
+            "trigger": "ld.escape()\t _ String",
             "contents": "_.escape(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.escapeRegExp([string=''])\t _ String",
+            "trigger": "ld.escapeRegExp()\t _ String",
             "contents": "_.escapeRegExp(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.kebabCase([string=''])\t _ String",
+            "trigger": "ld.kebabCase()\t _ String",
             "contents": "_.kebabCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.lowerCase([string=''])\t _ String",
+            "trigger": "ld.lowerCase()\t _ String",
             "contents": "_.lowerCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.lowerFirst([string=''])\t _ String",
+            "trigger": "ld.lowerFirst()\t _ String",
             "contents": "_.lowerFirst(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.pad([string=''], [length=0], [chars=' '])\t _ String",
+            "trigger": "ld.pad()\t _ String",
             "contents": "_.pad(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
         },
         {
-            "trigger": "ld.padEnd([string=''], [length=0], [chars=' '])\t _ String",
+            "trigger": "ld.padEnd()\t _ String",
             "contents": "_.padEnd(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
         },
         {
-            "trigger": "ld.padStart([string=''], [length=0], [chars=' '])\t _ String",
+            "trigger": "ld.padStart()\t _ String",
             "contents": "_.padStart(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
         },
         {
-            "trigger": "ld.parseInt(string, [radix=10])\t _ String",
+            "trigger": "ld.parseInt()\t _ String",
             "contents": "_.parseInt(${1:string}, ${2:[radix=10]})$0"
         },
         {
-            "trigger": "ld.repeat([string=''], [n=0])\t _ String",
+            "trigger": "ld.repeat()\t _ String",
             "contents": "_.repeat(${1:[string='']}, ${2:[n=0]})$0"
         },
         {
-            "trigger": "ld.replace([string=''], pattern, replacement)\t _ String",
+            "trigger": "ld.replace()\t _ String",
             "contents": "_.replace(${1:[string='']}, ${2:pattern}, ${3:replacement})$0"
         },
         {
-            "trigger": "ld.snakeCase([string=''])\t _ String",
+            "trigger": "ld.snakeCase()\t _ String",
             "contents": "_.snakeCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.split([string=''], separator, [limit])\t _ String",
+            "trigger": "ld.split()\t _ String",
             "contents": "_.split(${1:[string='']}, ${2:separator}, ${3:[limit]})$0"
         },
         {
-            "trigger": "ld.startCase([string=''])\t _ String",
+            "trigger": "ld.startCase()\t _ String",
             "contents": "_.startCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.startsWith([string=''], [target], [position=0])\t _ String",
+            "trigger": "ld.startsWith()\t _ String",
             "contents": "_.startsWith(${1:[string='']}, ${2:[target]}, ${3:[position=0]})$0"
         },
         {
-            "trigger": "ld.template([string=''], [options={}], [options.escape=_.templateSettings.escape], [options.evaluate=_.templateSettings.evaluate], [options.imports=_.templateSettings.imports], [options.interpolate=_.templateSettings.interpolate], [options.sourceURL='lodash.templateSources[n]'], [options.variable='obj'])\t _ String",
+            "trigger": "ld.template()\t _ String",
             "contents": "_.template(${1:[string='']}, ${2:[options={}]}, ${3:[options.escape=_.templateSettings.escape]}, ${4:[options.evaluate=_.templateSettings.evaluate]}, ${5:[options.imports=_.templateSettings.imports]}, ${6:[options.interpolate=_.templateSettings.interpolate]}, ${7:[options.sourceURL='lodash.templateSources[n]']}, ${8:[options.variable='obj']})$0"
         },
         {
-            "trigger": "ld.toLower([string=''])\t _ String",
+            "trigger": "ld.toLower()\t _ String",
             "contents": "_.toLower(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.toUpper([string=''])\t _ String",
+            "trigger": "ld.toUpper()\t _ String",
             "contents": "_.toUpper(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.trim([string=''], [chars=whitespace])\t _ String",
+            "trigger": "ld.trim()\t _ String",
             "contents": "_.trim(${1:[string='']}, ${2:[chars=whitespace]})$0"
         },
         {
-            "trigger": "ld.trimEnd([string=''], [chars=whitespace])\t _ String",
+            "trigger": "ld.trimEnd()\t _ String",
             "contents": "_.trimEnd(${1:[string='']}, ${2:[chars=whitespace]})$0"
         },
         {
-            "trigger": "ld.trimStart([string=''], [chars=whitespace])\t _ String",
+            "trigger": "ld.trimStart()\t _ String",
             "contents": "_.trimStart(${1:[string='']}, ${2:[chars=whitespace]})$0"
         },
         {
-            "trigger": "ld.truncate([string=''], [options={}], [options.length=30], [options.omission='...'], [options.separator])\t _ String",
+            "trigger": "ld.truncate()\t _ String",
             "contents": "_.truncate(${1:[string='']}, ${2:[options={}]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
         },
         {
-            "trigger": "ld.unescape([string=''])\t _ String",
+            "trigger": "ld.unescape()\t _ String",
             "contents": "_.unescape(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.upperCase([string=''])\t _ String",
+            "trigger": "ld.upperCase()\t _ String",
             "contents": "_.upperCase(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.upperFirst([string=''])\t _ String",
+            "trigger": "ld.upperFirst()\t _ String",
             "contents": "_.upperFirst(${1:[string='']})$0"
         },
         {
-            "trigger": "ld.words([string=''], [pattern])\t _ String",
+            "trigger": "ld.words()\t _ String",
             "contents": "_.words(${1:[string='']}, ${2:[pattern]})$0"
         }
     ]

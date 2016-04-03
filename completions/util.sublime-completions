@@ -2,59 +2,59 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "ld.attempt(func, [args])\t _ Util",
+            "trigger": "ld.attempt()\t _ Util",
             "contents": "_.attempt(${1:func}, ${2:[args]})$0"
         },
         {
-            "trigger": "ld.bindAll(object, methodNames)\t _ Util",
+            "trigger": "ld.bindAll()\t _ Util",
             "contents": "_.bindAll(${1:object}, ${2:methodNames})$0"
         },
         {
-            "trigger": "ld.cond(pairs)\t _ Util",
+            "trigger": "ld.cond()\t _ Util",
             "contents": "_.cond(${1:pairs})$0"
         },
         {
-            "trigger": "ld.conforms(source)\t _ Util",
+            "trigger": "ld.conforms()\t _ Util",
             "contents": "_.conforms(${1:source})$0"
         },
         {
-            "trigger": "ld.constant(value)\t _ Util",
+            "trigger": "ld.constant()\t _ Util",
             "contents": "_.constant(${1:value})$0"
         },
         {
-            "trigger": "ld.flow([funcs])\t _ Util",
+            "trigger": "ld.flow()\t _ Util",
             "contents": "_.flow(${1:[funcs]})$0"
         },
         {
-            "trigger": "ld.flowRight([funcs])\t _ Util",
+            "trigger": "ld.flowRight()\t _ Util",
             "contents": "_.flowRight(${1:[funcs]})$0"
         },
         {
-            "trigger": "ld.identity(value)\t _ Util",
+            "trigger": "ld.identity()\t _ Util",
             "contents": "_.identity(${1:value})$0"
         },
         {
-            "trigger": "ld.iteratee([func=_.identity])\t _ Util",
+            "trigger": "ld.iteratee()\t _ Util",
             "contents": "_.iteratee(${1:[func=_.identity]})$0"
         },
         {
-            "trigger": "ld.matches(source)\t _ Util",
+            "trigger": "ld.matches()\t _ Util",
             "contents": "_.matches(${1:source})$0"
         },
         {
-            "trigger": "ld.matchesProperty(path, srcValue)\t _ Util",
+            "trigger": "ld.matchesProperty()\t _ Util",
             "contents": "_.matchesProperty(${1:path}, ${2:srcValue})$0"
         },
         {
-            "trigger": "ld.method(path, [args])\t _ Util",
+            "trigger": "ld.method()\t _ Util",
             "contents": "_.method(${1:path}, ${2:[args]})$0"
         },
         {
-            "trigger": "ld.methodOf(object, [args])\t _ Util",
+            "trigger": "ld.methodOf()\t _ Util",
             "contents": "_.methodOf(${1:object}, ${2:[args]})$0"
         },
         {
-            "trigger": "ld.mixin([object=lodash], source, [options={}], [options.chain=true])\t _ Util",
+            "trigger": "ld.mixin()\t _ Util",
             "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]}, ${4:[options.chain=true]})$0"
         },
         {
@@ -66,51 +66,51 @@
             "contents": "_.noop()$0"
         },
         {
-            "trigger": "ld.nthArg([n=0])\t _ Util",
+            "trigger": "ld.nthArg()\t _ Util",
             "contents": "_.nthArg(${1:[n=0]})$0"
         },
         {
-            "trigger": "ld.over(iteratees)\t _ Util",
+            "trigger": "ld.over()\t _ Util",
             "contents": "_.over(${1:iteratees})$0"
         },
         {
-            "trigger": "ld.overEvery(predicates)\t _ Util",
+            "trigger": "ld.overEvery()\t _ Util",
             "contents": "_.overEvery(${1:predicates})$0"
         },
         {
-            "trigger": "ld.overSome(predicates)\t _ Util",
+            "trigger": "ld.overSome()\t _ Util",
             "contents": "_.overSome(${1:predicates})$0"
         },
         {
-            "trigger": "ld.property(path)\t _ Util",
+            "trigger": "ld.property()\t _ Util",
             "contents": "_.property(${1:path})$0"
         },
         {
-            "trigger": "ld.propertyOf(object)\t _ Util",
+            "trigger": "ld.propertyOf()\t _ Util",
             "contents": "_.propertyOf(${1:object})$0"
         },
         {
-            "trigger": "ld.range([start=0], end, [step=1])\t _ Util",
+            "trigger": "ld.range()\t _ Util",
             "contents": "_.range(${1:[start=0]}, ${2:end}, ${3:[step=1]})$0"
         },
         {
-            "trigger": "ld.rangeRight([start=0], end, [step=1])\t _ Util",
+            "trigger": "ld.rangeRight()\t _ Util",
             "contents": "_.rangeRight(${1:[start=0]}, ${2:end}, ${3:[step=1]})$0"
         },
         {
-            "trigger": "ld.runInContext([context=root])\t _ Util",
+            "trigger": "ld.runInContext()\t _ Util",
             "contents": "_.runInContext(${1:[context=root]})$0"
         },
         {
-            "trigger": "ld.times(n, [iteratee=_.identity])\t _ Util",
+            "trigger": "ld.times()\t _ Util",
             "contents": "_.times(${1:n}, ${2:[iteratee=_.identity]})$0"
         },
         {
-            "trigger": "ld.toPath(value)\t _ Util",
+            "trigger": "ld.toPath()\t _ Util",
             "contents": "_.toPath(${1:value})$0"
         },
         {
-            "trigger": "ld.uniqueId([prefix=''])\t _ Util",
+            "trigger": "ld.uniqueId()\t _ Util",
             "contents": "_.uniqueId(${1:[prefix='']})$0"
         }
     ]

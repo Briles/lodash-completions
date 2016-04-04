@@ -1,5 +1,5 @@
 {
-    "scope": "source.js",
+    "scope": "source.js, source.coffee",
     "completions": [
         {
             "trigger": "ld.add()\t _ Math",

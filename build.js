@@ -46,7 +46,7 @@
         numCompletions += 1;
 
         var completionsData = {
-          scope: 'source.js',
+          scope: 'source.js, source.coffee',
           completions: [],
         };
 

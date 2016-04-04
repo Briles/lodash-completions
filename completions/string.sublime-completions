@@ -55,7 +55,7 @@
         },
         {
             "trigger": "ld.repeat()\t _ String",
-            "contents": "_.repeat(${1:[string='']}, ${2:[n=0]})$0"
+            "contents": "_.repeat(${1:[string='']}, ${2:[n=1]})$0"
         },
         {
             "trigger": "ld.replace()\t _ String",

@@ -87,7 +87,7 @@
         },
         {
             "trigger": "ld.sampleSize()\t _ Collection",
-            "contents": "_.sampleSize(${1:collection}, ${2:[n=0]})$0"
+            "contents": "_.sampleSize(${1:collection}, ${2:[n=1]})$0"
         },
         {
             "trigger": "ld.shuffle()\t _ Collection",

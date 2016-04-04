@@ -3,7 +3,7 @@
     "completions": [
         {
             "trigger": "ld.chunk()\t _ Array",
-            "contents": "_.chunk(${1:array}, ${2:[size=0]})$0"
+            "contents": "_.chunk(${1:array}, ${2:[size=1]})$0"
         },
         {
             "trigger": "ld.compact()\t _ Array",

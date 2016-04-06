@@ -13,6 +13,6 @@ Theme used in screenshot is [gruvbox](https://packagecontrol.io/packages/gruvbox
 
 ### Usage
 
-To trigger the completion type, `ld` followed by what your trying to complete.
+To trigger the completion, type `ld` followed by what your trying to complete.
 
 To complete chainable functions, type`cld` instead of `ld`. Chained completions are not prefixed by `_`.

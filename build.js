@@ -55,12 +55,13 @@
         var codeSnippets = $(this).nextUntil('h2', 'h3');
         codeSnippets.each(function () {
           var trigger = $(this).text().trim();
-
+          var hasPrefix = false;
           var hasParams = trigger.match(/(?=\(([^)]+)\))/g);
           var contents = trigger;
 
           if (trigger[0] === '_') {
             var len = trigger.length;
+            hasPrefix = true;
             trigger = commander.namespace + trigger.substring(1, len);
           }
 
@@ -84,6 +85,13 @@
           };
 
           completionsData.completions.push(completion);
+
+          var unPrefixed = JSON.parse(JSON.stringify(completion));
+
+          unPrefixed.trigger = 'c' + unPrefixed.trigger;
+          unPrefixed.contents = hasPrefix === true ? unPrefixed.contents.slice(1) : unPrefixed.contents;
+
+          completionsData.completions.push(unPrefixed);
         });
 
         writeCompletions(group, completionsData);
@@ -93,10 +101,10 @@
 
   commander
     .version('1.0.0')
-    .usage('Generates completions for lodash using "' + getDocumentationUrl('master') + '"')
-    .option('-t --tag [tag]', 'lodash version to fetch', 'master')
-    .option('-n --namespace [namespace]', 'namespace to use in place of _', 'ld')
-    .option('-o --omit-params [omitParams]', 'don\'t write params within triggers', false)
+    .usage('Generates completions for lodash')
+    .option('-t --tag [tag]', 'lodash version to fetch (must be valid git tag)', 'master')
+    .option('-n --namespace [namespace]', 'namespace to use in place of `_`', 'ld')
+    .option('-o --omit-params [omitParams]', 'don\'t write params within triggers', true)
     .parse(process.argv);
 
   getDocumentation(parseDocumentation);

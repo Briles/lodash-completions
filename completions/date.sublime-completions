@@ -4,6 +4,10 @@
         {
             "trigger": "ld.now()\t _ Date",
             "contents": "_.now()$0"
+        },
+        {
+            "trigger": "cld.now()\t _ Date",
+            "contents": ".now()$0"
         }
     ]
 }

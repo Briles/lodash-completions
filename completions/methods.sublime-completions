@@ -4,6 +4,10 @@
         {
             "trigger": "ld.templateSettings.imports._\t _ Methods",
             "contents": "_.templateSettings.imports._$0"
+        },
+        {
+            "trigger": "cld.templateSettings.imports._\t _ Methods",
+            "contents": ".templateSettings.imports._$0"
         }
     ]
 }

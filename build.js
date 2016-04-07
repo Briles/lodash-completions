@@ -55,15 +55,27 @@
         var codeSnippets = $(this).nextUntil('h2', 'h3');
         codeSnippets.each(function () {
           var trigger = $(this).text().trim();
+          var func = trigger.match(/[\w\.]+/g)[0];
+          console.log(func);
           var hasPrefix = false;
           var hasParams = trigger.match(/(?=\(([^)]+)\))/g);
           var contents = trigger;
 
           if (trigger[0] === '_') {
-            var len = trigger.length;
             hasPrefix = true;
-            trigger = commander.namespace + trigger.substring(1, len);
+            trigger = commander.namespace + trigger.slice(1);
           }
+
+          var headings = $(this).nextUntil('h3', 'h4');
+
+          var alias;
+
+          headings.each(function () {
+            var heading = $(this).text().trim();
+            if (heading === 'Aliases' && $(this).next().is('p')) {
+              alias = $(this).next().text().trim();
+            }
+          });
 
           if (hasParams) {
 
@@ -85,6 +97,21 @@
           };
 
           completionsData.completions.push(completion);
+
+          if (alias) {
+            var unPrefixedAlias = alias.replace('_.', '.');
+            var unPrefixedFunc = func.replace('_.', '.');
+            var aliased = JSON.parse(JSON.stringify(completion));
+
+            aliased.trigger = aliased.trigger.replace(unPrefixedFunc, unPrefixedAlias);
+            aliased.contents = aliased.contents.replace(unPrefixedFunc, unPrefixedAlias);
+            completionsData.completions.push(aliased);
+
+            var unPrefixedAliased = JSON.parse(JSON.stringify(aliased));
+            unPrefixedAliased.trigger = 'c' + unPrefixedAliased.trigger;
+            unPrefixedAliased.contents = hasPrefix === true ? unPrefixedAliased.contents.slice(1) : unPrefixedAliased.contents;
+            completionsData.completions.push(unPrefixedAliased);
+          }
 
           var unPrefixed = JSON.parse(JSON.stringify(completion));
 

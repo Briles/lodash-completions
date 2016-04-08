@@ -68,12 +68,12 @@
 
           var headings = $(this).nextUntil('h3', 'h4');
 
-          var alias;
+          var aliases = [];
 
           headings.each(function () {
             var heading = $(this).text().trim();
             if (heading === 'Aliases' && $(this).next().is('p')) {
-              alias = $(this).next().text().trim();
+              aliases = $(this).next().text().split(',').map(t => t.trim());
             }
           });
 
@@ -98,7 +98,7 @@
 
           completionsData.completions.push(completion);
 
-          if (alias) {
+          aliases.forEach(function (alias) {
             var unPrefixedAlias = alias.replace('_.', '.');
             var unPrefixedFunc = func.replace('_.', '.');
             var aliased = JSON.parse(JSON.stringify(completion));
@@ -111,7 +111,7 @@
             unPrefixedAliased.trigger = 'c' + unPrefixedAliased.trigger;
             unPrefixedAliased.contents = hasPrefix === true ? unPrefixedAliased.contents.slice(1) : unPrefixedAliased.contents;
             completionsData.completions.push(unPrefixedAliased);
-          }
+          });
 
           var unPrefixed = JSON.parse(JSON.stringify(completion));
 

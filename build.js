@@ -39,11 +39,9 @@
 
   var parseDocumentation = function (html) {
     var $ = cheerio.load(html);
-    var numCompletions = 0;
 
     $('h2').each(function () {
       if ($(this).next().is('h3')) {
-        numCompletions += 1;
 
         var completionsData = {
           scope: 'source.js, source.coffee',

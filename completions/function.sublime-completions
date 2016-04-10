@@ -115,11 +115,11 @@
         },
         {
             "trigger": "ld.overArgs()\t _ Function",
-            "contents": "_.overArgs(${1:func}, ${2:[transforms]})$0"
+            "contents": "_.overArgs(${1:func})$0"
         },
         {
             "trigger": "cld.overArgs()\t _ Function",
-            "contents": ".overArgs(${1:func}, ${2:[transforms]})$0"
+            "contents": ".overArgs(${1:func})$0"
         },
         {
             "trigger": "ld.partial()\t _ Function",

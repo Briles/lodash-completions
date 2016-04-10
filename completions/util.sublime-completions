@@ -139,27 +139,27 @@
         },
         {
             "trigger": "ld.over()\t _ Util",
-            "contents": "_.over(${1:iteratees})$0"
+            "contents": "_.over(${1:[iteratees=[_.identity]]})$0"
         },
         {
             "trigger": "cld.over()\t _ Util",
-            "contents": ".over(${1:iteratees})$0"
+            "contents": ".over(${1:[iteratees=[_.identity]]})$0"
         },
         {
             "trigger": "ld.overEvery()\t _ Util",
-            "contents": "_.overEvery(${1:predicates})$0"
+            "contents": "_.overEvery(${1:[predicates=[_.identity]]})$0"
         },
         {
             "trigger": "cld.overEvery()\t _ Util",
-            "contents": ".overEvery(${1:predicates})$0"
+            "contents": ".overEvery(${1:[predicates=[_.identity]]})$0"
         },
         {
             "trigger": "ld.overSome()\t _ Util",
-            "contents": "_.overSome(${1:predicates})$0"
+            "contents": "_.overSome(${1:[predicates=[_.identity]]})$0"
         },
         {
             "trigger": "cld.overSome()\t _ Util",
-            "contents": ".overSome(${1:predicates})$0"
+            "contents": ".overSome(${1:[predicates=[_.identity]]})$0"
         },
         {
             "trigger": "ld.property()\t _ Util",

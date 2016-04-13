@@ -14,6 +14,10 @@
             "contents": "_.assignIn(${1:object}, ${2:[sources]})$0"
         },
         {
+            "trigger": "cld.assignIn()\t _ Object",
+            "contents": ".assignIn(${1:object}, ${2:[sources]})$0"
+        },
+        {
             "trigger": "ld.extend()\t _ Object",
             "contents": "_.extend(${1:object}, ${2:[sources]})$0"
         },
@@ -22,12 +26,12 @@
             "contents": ".extend(${1:object}, ${2:[sources]})$0"
         },
         {
-            "trigger": "cld.assignIn()\t _ Object",
-            "contents": ".assignIn(${1:object}, ${2:[sources]})$0"
-        },
-        {
             "trigger": "ld.assignInWith()\t _ Object",
             "contents": "_.assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "cld.assignInWith()\t _ Object",
+            "contents": ".assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
         },
         {
             "trigger": "ld.extendWith()\t _ Object",
@@ -36,10 +40,6 @@
         {
             "trigger": "cld.extendWith()\t _ Object",
             "contents": ".extendWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
-        },
-        {
-            "trigger": "cld.assignInWith()\t _ Object",
-            "contents": ".assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
         },
         {
             "trigger": "ld.assignWith()\t _ Object",
@@ -302,6 +302,10 @@
             "contents": "_.toPairs(${1:object})$0"
         },
         {
+            "trigger": "cld.toPairs()\t _ Object",
+            "contents": ".toPairs(${1:object})$0"
+        },
+        {
             "trigger": "ld.entries()\t _ Object",
             "contents": "_.entries(${1:object})$0"
         },
@@ -310,12 +314,12 @@
             "contents": ".entries(${1:object})$0"
         },
         {
-            "trigger": "cld.toPairs()\t _ Object",
-            "contents": ".toPairs(${1:object})$0"
-        },
-        {
             "trigger": "ld.toPairsIn()\t _ Object",
             "contents": "_.toPairsIn(${1:object})$0"
+        },
+        {
+            "trigger": "cld.toPairsIn()\t _ Object",
+            "contents": ".toPairsIn(${1:object})$0"
         },
         {
             "trigger": "ld.entriesIn()\t _ Object",
@@ -324,10 +328,6 @@
         {
             "trigger": "cld.entriesIn()\t _ Object",
             "contents": ".entriesIn(${1:object})$0"
-        },
-        {
-            "trigger": "cld.toPairsIn()\t _ Object",
-            "contents": ".toPairsIn(${1:object})$0"
         },
         {
             "trigger": "ld.transform()\t _ Object",

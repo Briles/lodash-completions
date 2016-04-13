@@ -142,16 +142,16 @@
             "contents": "_.head(${1:array})$0"
         },
         {
+            "trigger": "cld.head()\t _ Array",
+            "contents": ".head(${1:array})$0"
+        },
+        {
             "trigger": "ld.first()\t _ Array",
             "contents": "_.first(${1:array})$0"
         },
         {
             "trigger": "cld.first()\t _ Array",
             "contents": ".first(${1:array})$0"
-        },
-        {
-            "trigger": "cld.head()\t _ Array",
-            "contents": ".head(${1:array})$0"
         },
         {
             "trigger": "ld.indexOf()\t _ Array",

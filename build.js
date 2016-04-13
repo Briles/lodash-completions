@@ -6,45 +6,39 @@
   const fs = require('fs');
   const https = require('https');
   const marked = require('marked');
-  const path = require('path');
+
+  commander
+    .version('1.0.0')
+    .usage('Generates completions for lodash')
+    .option('-t --tag [tag]', 'lodash version to fetch (must be valid git tag)', 'master')
+    .option('-n --namespace [namespace]', 'namespace to use in place of `_`', 'ld')
+    .parse(process.argv);
+
+  const isFunctionRe = new RegExp('\\(.*\\)');
+  const hasParamsRe = new RegExp('\\([^)]+\\)');
+  const replacee = '~#~';
+  const configurations = [{
+    triggerPrefix: commander.namespace,
+    completionPrefix: '_',
+  }, {
+    triggerPrefix: 'c' + commander.namespace,
+    completionPrefix: '',
+  }, ];
 
   var writeCompletions = function (filename, contents) {
     filename = filename.toLowerCase();
-    var destPath = path.join(__dirname, '/completions/', filename + '.sublime-completions');
+    var destPath = `${__dirname}/completions/${filename}.sublime-completions`;
 
     fs.writeFile(destPath, JSON.stringify(contents, null, 4), function (err) {
       if (err) {
         return console.log(err);
       }
 
-      console.log('Completions saved to "' + destPath + '"');
+      console.log(`Saved "${destPath}"`);
     });
   };
 
-  var getDocumentationUrl = function (version) {
-    return 'https://raw.githubusercontent.com/lodash/lodash/#/doc/README.md'.replace('#', version);
-  };
-
-  var getDocumentation = function (callback) {
-    var url = getDocumentationUrl(commander.tag);
-
-    https.get(url, (res) => {
-      var body = '';
-
-      res.on('data', (d) => {
-        body += d;
-      });
-
-      res.on('end', function () {
-        callback(marked(body));
-      });
-
-    }).on('error', (e) => {
-      console.error(e);
-    });
-  };
-
-  var parseDocumentation = function (html) {
+  var parse = function (html) {
     var $ = cheerio.load(html);
 
     $('h2').each(function () {
@@ -57,73 +51,53 @@
 
         var group = $(this).text().replace(/(“|” Methods)/gi, '').trim();
 
-        var codeSnippets = $(this).nextUntil('h2', 'h3');
-        codeSnippets.each(function () {
-          var trigger = $(this).text().trim();
-          var func = trigger.match(/[\w\.]+/g)[0];
-          console.log(func);
-          var hasPrefix = false;
-          var hasParams = trigger.match(/(?=\(([^)]+)\))/g);
-          var contents = trigger;
+        $(this).nextUntil('h2', 'h3').each(function () {
+          var base = $(this).text().replace(/\(.*\)/, `(${replacee})`).trim().slice(1);
+          var isFunction = isFunctionRe.test(base);
+          var hasParams = hasParamsRe.test($(this).text());
 
-          if (trigger[0] === '_') {
-            hasPrefix = true;
-            trigger = commander.namespace + trigger.slice(1);
-          }
-
-          var headings = $(this).nextUntil('h3', 'h4');
-
-          var aliases = [];
-
-          headings.each(function () {
-            var heading = $(this).text().trim();
-            if (heading === 'Aliases' && $(this).next().is('p')) {
-              aliases = $(this).next().text().split(',').map(t => t.trim());
-            }
-          });
+          var parameters = [];
 
           if (hasParams) {
-
-            if (commander.omitParams) {
-              trigger = trigger.replace(/(\([^)]*\))/g, '()');
-            }
-
             $(this).nextUntil('ol').next().children('li').each(function (i) {
-              i = i + 1;
-              var code = $(this).children('code').first().text();
-              contents = contents.replace(code, '${' + i + ':' + code + '}');
+              i += 1;
+              parameters.push('${' + i + ':' + $(this).children('code').first().text() + '}');
             });
 
+            parameters = parameters.join(', ');
           }
 
-          var completion = {
-            trigger: trigger + '\t _ ' + group,
-            contents: contents + '$0',
-          };
+          var aliases = [base];
 
-          completionsData.completions.push(completion);
+          $(this).nextUntil('h3', 'h4').each(function () {
+            if ($(this).text().trim() === 'Aliases' && $(this).next().is('p')) {
+              aliases.push(...($(this).next().text().split(',').map(function (alias) {
+                alias = alias.trim();
 
-          aliases.forEach(function (alias) {
-            var unPrefixedAlias = alias.replace('_.', '.');
-            var unPrefixedFunc = func.replace('_.', '.');
-            var aliased = JSON.parse(JSON.stringify(completion));
+                if (alias.slice(0, 1) !== '_') {
+                  alias = '_' + alias;
+                }
 
-            aliased.trigger = aliased.trigger.replace(unPrefixedFunc, unPrefixedAlias);
-            aliased.contents = aliased.contents.replace(unPrefixedFunc, unPrefixedAlias);
-            completionsData.completions.push(aliased);
-
-            var unPrefixedAliased = JSON.parse(JSON.stringify(aliased));
-            unPrefixedAliased.trigger = 'c' + unPrefixedAliased.trigger;
-            unPrefixedAliased.contents = hasPrefix === true ? unPrefixedAliased.contents.slice(1) : unPrefixedAliased.contents;
-            completionsData.completions.push(unPrefixedAliased);
+                return (isFunction ? alias + `(${replacee})` : alias).trim().slice(1);
+              })));
+            }
           });
 
-          var unPrefixed = JSON.parse(JSON.stringify(completion));
+          aliases.forEach(function (alias) {
+            var trigger = alias.replace(replacee, '');
+            var contents = alias.replace(replacee, parameters);
 
-          unPrefixed.trigger = 'c' + unPrefixed.trigger;
-          unPrefixed.contents = hasPrefix === true ? unPrefixed.contents.slice(1) : unPrefixed.contents;
+            console.log(trigger);
 
-          completionsData.completions.push(unPrefixed);
+            configurations.forEach(function (config) {
+              var completion = {
+                trigger: `${config.triggerPrefix + trigger}\t _ ${group}`,
+                contents: `${config.completionPrefix + contents}$0`,
+              };
+
+              completionsData.completions.push(completion);
+            });
+          });
         });
 
         writeCompletions(group, completionsData);
@@ -131,13 +105,22 @@
     });
   };
 
-  commander
-    .version('1.0.0')
-    .usage('Generates completions for lodash')
-    .option('-t --tag [tag]', 'lodash version to fetch (must be valid git tag)', 'master')
-    .option('-n --namespace [namespace]', 'namespace to use in place of `_`', 'ld')
-    .option('-o --omit-params [omitParams]', 'don\'t write params within triggers', true)
-    .parse(process.argv);
+  (function () {
+    var url = `https://raw.githubusercontent.com/lodash/lodash/${commander.tag}/doc/README.md`;
 
-  getDocumentation(parseDocumentation);
+    https.get(url, (res) => {
+      var body = '';
+
+      res.on('data', (d) => {
+        body += d;
+      });
+
+      res.on('end', function () {
+        parse(marked(body));
+      });
+
+    }).on('error', (e) => {
+      console.error(e);
+    });
+  }());
 }());

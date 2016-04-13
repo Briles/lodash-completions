@@ -94,6 +94,10 @@
             "contents": "_.prototype.value()$0"
         },
         {
+            "trigger": "cld.prototype.value()\t _ Seq",
+            "contents": ".prototype.value()$0"
+        },
+        {
             "trigger": "ld.prototype.toJSON()\t _ Seq",
             "contents": "_.prototype.toJSON()$0"
         },
@@ -108,10 +112,6 @@
         {
             "trigger": "cld.prototype.valueOf()\t _ Seq",
             "contents": ".prototype.valueOf()$0"
-        },
-        {
-            "trigger": "cld.prototype.value()\t _ Seq",
-            "contents": ".prototype.value()$0"
         }
     ]
 }

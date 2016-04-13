@@ -1,12 +1,12 @@
 (function () {
   'use strict';
 
-  const request = require('request');
-  const marked = require('marked');
-  const commander = require('commander');
   const cheerio = require('cheerio');
-  const path = require('path');
+  const commander = require('commander');
   const fs = require('fs');
+  const https = require('https');
+  const marked = require('marked');
+  const path = require('path');
 
   var writeCompletions = function (filename, contents) {
     filename = filename.toLowerCase();
@@ -28,12 +28,19 @@
   var getDocumentation = function (callback) {
     var url = getDocumentationUrl(commander.tag);
 
-    request(url, function (error, response, body) {
-      if (!error && response.statusCode === 200) {
+    https.get(url, (res) => {
+      var body = '';
+
+      res.on('data', (d) => {
+        body += d;
+      });
+
+      res.on('end', function () {
         callback(marked(body));
-      } else if (response.statusCode === 404) {
-        return console.log('Version "' + commander.tag + '" could not be found.');
-      }
+      });
+
+    }).on('error', (e) => {
+      console.error(e);
     });
   };
 

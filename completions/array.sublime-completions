@@ -218,6 +218,14 @@
             "contents": ".lastIndexOf(${1:array}, ${2:value}, ${3:[fromIndex=array.length-1]})$0"
         },
         {
+            "trigger": "ld.nth()\t _ Array",
+            "contents": "_.nth(${1:array}, ${2:[n=0]})$0"
+        },
+        {
+            "trigger": "cld.nth()\t _ Array",
+            "contents": ".nth(${1:array}, ${2:[n=0]})$0"
+        },
+        {
             "trigger": "ld.pull()\t _ Array",
             "contents": "_.pull(${1:array}, ${2:[values]})$0"
         },

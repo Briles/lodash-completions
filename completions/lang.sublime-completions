@@ -386,6 +386,14 @@
             "contents": ".toArray(${1:value})$0"
         },
         {
+            "trigger": "ld.toFinite()\t _ Lang",
+            "contents": "_.toFinite(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toFinite()\t _ Lang",
+            "contents": ".toFinite(${1:value})$0"
+        },
+        {
             "trigger": "ld.toInteger()\t _ Lang",
             "contents": "_.toInteger(${1:value})$0"
         },

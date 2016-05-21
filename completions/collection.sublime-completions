@@ -27,19 +27,19 @@
         },
         {
             "trigger": "ld.find()\t _ Collection",
-            "contents": "_.find(${1:collection}, ${2:[predicate=_.identity]})$0"
+            "contents": "_.find(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=0]})$0"
         },
         {
             "trigger": "cld.find()\t _ Collection",
-            "contents": ".find(${1:collection}, ${2:[predicate=_.identity]})$0"
+            "contents": ".find(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=0]})$0"
         },
         {
             "trigger": "ld.findLast()\t _ Collection",
-            "contents": "_.findLast(${1:collection}, ${2:[predicate=_.identity]})$0"
+            "contents": "_.findLast(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=collection.length-1]})$0"
         },
         {
             "trigger": "cld.findLast()\t _ Collection",
-            "contents": ".findLast(${1:collection}, ${2:[predicate=_.identity]})$0"
+            "contents": ".findLast(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=collection.length-1]})$0"
         },
         {
             "trigger": "ld.flatMap()\t _ Collection",

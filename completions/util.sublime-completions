@@ -202,6 +202,46 @@
             "contents": ".runInContext(${1:[context=root]})$0"
         },
         {
+            "trigger": "ld.stubArray()\t _ Util",
+            "contents": "_.stubArray()$0"
+        },
+        {
+            "trigger": "cld.stubArray()\t _ Util",
+            "contents": ".stubArray()$0"
+        },
+        {
+            "trigger": "ld.stubFalse()\t _ Util",
+            "contents": "_.stubFalse()$0"
+        },
+        {
+            "trigger": "cld.stubFalse()\t _ Util",
+            "contents": ".stubFalse()$0"
+        },
+        {
+            "trigger": "ld.stubObject()\t _ Util",
+            "contents": "_.stubObject()$0"
+        },
+        {
+            "trigger": "cld.stubObject()\t _ Util",
+            "contents": ".stubObject()$0"
+        },
+        {
+            "trigger": "ld.stubString()\t _ Util",
+            "contents": "_.stubString()$0"
+        },
+        {
+            "trigger": "cld.stubString()\t _ Util",
+            "contents": ".stubString()$0"
+        },
+        {
+            "trigger": "ld.stubTrue()\t _ Util",
+            "contents": "_.stubTrue()$0"
+        },
+        {
+            "trigger": "cld.stubTrue()\t _ Util",
+            "contents": ".stubTrue()$0"
+        },
+        {
             "trigger": "ld.times()\t _ Util",
             "contents": "_.times(${1:n}, ${2:[iteratee=_.identity]})$0"
         },

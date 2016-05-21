@@ -91,19 +91,19 @@
         },
         {
             "trigger": "ld.findIndex()\t _ Array",
-            "contents": "_.findIndex(${1:array}, ${2:[predicate=_.identity]})$0"
+            "contents": "_.findIndex(${1:array}, ${2:[predicate=_.identity]}, ${3:[fromIndex=0]})$0"
         },
         {
             "trigger": "cld.findIndex()\t _ Array",
-            "contents": ".findIndex(${1:array}, ${2:[predicate=_.identity]})$0"
+            "contents": ".findIndex(${1:array}, ${2:[predicate=_.identity]}, ${3:[fromIndex=0]})$0"
         },
         {
             "trigger": "ld.findLastIndex()\t _ Array",
-            "contents": "_.findLastIndex(${1:array}, ${2:[predicate=_.identity]})$0"
+            "contents": "_.findLastIndex(${1:array}, ${2:[predicate=_.identity]}, ${3:[fromIndex=array.length-1]})$0"
         },
         {
             "trigger": "cld.findLastIndex()\t _ Array",
-            "contents": ".findLastIndex(${1:array}, ${2:[predicate=_.identity]})$0"
+            "contents": ".findLastIndex(${1:array}, ${2:[predicate=_.identity]}, ${3:[fromIndex=array.length-1]})$0"
         },
         {
             "trigger": "ld.flatten()\t _ Array",

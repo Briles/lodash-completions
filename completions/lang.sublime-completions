@@ -42,6 +42,14 @@
             "contents": ".cloneWith(${1:value}, ${2:[customizer]})$0"
         },
         {
+            "trigger": "ld.conformsTo()\t _ Lang",
+            "contents": "_.conformsTo(${1:object}, ${2:source})$0"
+        },
+        {
+            "trigger": "cld.conformsTo()\t _ Lang",
+            "contents": ".conformsTo(${1:object}, ${2:source})$0"
+        },
+        {
             "trigger": "ld.eq()\t _ Lang",
             "contents": "_.eq(${1:value}, ${2:other})$0"
         },

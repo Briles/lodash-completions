@@ -42,6 +42,14 @@
             "contents": ".constant(${1:value})$0"
         },
         {
+            "trigger": "ld.defaultTo()\t _ Util",
+            "contents": "_.defaultTo(${1:value}, ${2:defaultValue})$0"
+        },
+        {
+            "trigger": "cld.defaultTo()\t _ Util",
+            "contents": ".defaultTo(${1:value}, ${2:defaultValue})$0"
+        },
+        {
             "trigger": "ld.flow()\t _ Util",
             "contents": "_.flow(${1:[funcs]})$0"
         },

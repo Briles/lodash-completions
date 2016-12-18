@@ -1,0 +1,61 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld()\t _ Seq",
+            "contents": "(${1:value})$0"
+        },
+        {
+            "trigger": "cld.chain()\t _ Seq",
+            "contents": ".chain(${1:value})$0"
+        },
+        {
+            "trigger": "cld.tap()\t _ Seq",
+            "contents": ".tap(${1:value}, ${2:interceptor})$0"
+        },
+        {
+            "trigger": "cld.thru()\t _ Seq",
+            "contents": ".thru(${1:value}, ${2:interceptor})$0"
+        },
+        {
+            "trigger": "cld.prototype[Symbol.iterator]()\t _ Seq",
+            "contents": ".prototype[Symbol.iterator]()$0"
+        },
+        {
+            "trigger": "cld.prototype.at()\t _ Seq",
+            "contents": ".prototype.at(${1:[paths]})$0"
+        },
+        {
+            "trigger": "cld.prototype.chain()\t _ Seq",
+            "contents": ".prototype.chain()$0"
+        },
+        {
+            "trigger": "cld.prototype.commit()\t _ Seq",
+            "contents": ".prototype.commit()$0"
+        },
+        {
+            "trigger": "cld.prototype.next()\t _ Seq",
+            "contents": ".prototype.next()$0"
+        },
+        {
+            "trigger": "cld.prototype.plant()\t _ Seq",
+            "contents": ".prototype.plant(${1:value})$0"
+        },
+        {
+            "trigger": "cld.prototype.reverse()\t _ Seq",
+            "contents": ".prototype.reverse()$0"
+        },
+        {
+            "trigger": "cld.prototype.value()\t _ Seq",
+            "contents": ".prototype.value()$0"
+        },
+        {
+            "trigger": "cld.prototype.toJSON()\t _ Seq",
+            "contents": ".prototype.toJSON()$0"
+        },
+        {
+            "trigger": "cld.prototype.valueOf()\t _ Seq",
+            "contents": ".prototype.valueOf()$0"
+        }
+    ]
+}

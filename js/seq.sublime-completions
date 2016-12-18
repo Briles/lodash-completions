@@ -1,0 +1,61 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "ld()\t _ Seq",
+            "contents": "_(${1:value})$0"
+        },
+        {
+            "trigger": "ld.chain()\t _ Seq",
+            "contents": "_.chain(${1:value})$0"
+        },
+        {
+            "trigger": "ld.tap()\t _ Seq",
+            "contents": "_.tap(${1:value}, ${2:interceptor})$0"
+        },
+        {
+            "trigger": "ld.thru()\t _ Seq",
+            "contents": "_.thru(${1:value}, ${2:interceptor})$0"
+        },
+        {
+            "trigger": "ld.prototype[Symbol.iterator]()\t _ Seq",
+            "contents": "_.prototype[Symbol.iterator]()$0"
+        },
+        {
+            "trigger": "ld.prototype.at()\t _ Seq",
+            "contents": "_.prototype.at(${1:[paths]})$0"
+        },
+        {
+            "trigger": "ld.prototype.chain()\t _ Seq",
+            "contents": "_.prototype.chain()$0"
+        },
+        {
+            "trigger": "ld.prototype.commit()\t _ Seq",
+            "contents": "_.prototype.commit()$0"
+        },
+        {
+            "trigger": "ld.prototype.next()\t _ Seq",
+            "contents": "_.prototype.next()$0"
+        },
+        {
+            "trigger": "ld.prototype.plant()\t _ Seq",
+            "contents": "_.prototype.plant(${1:value})$0"
+        },
+        {
+            "trigger": "ld.prototype.reverse()\t _ Seq",
+            "contents": "_.prototype.reverse()$0"
+        },
+        {
+            "trigger": "ld.prototype.value()\t _ Seq",
+            "contents": "_.prototype.value()$0"
+        },
+        {
+            "trigger": "ld.prototype.toJSON()\t _ Seq",
+            "contents": "_.prototype.toJSON()$0"
+        },
+        {
+            "trigger": "ld.prototype.valueOf()\t _ Seq",
+            "contents": "_.prototype.valueOf()$0"
+        },
+    ]
+}

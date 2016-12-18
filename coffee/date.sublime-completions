@@ -1,0 +1,9 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.now()\t _ Date",
+            "contents": ".now()$0"
+        }
+    ]
+}

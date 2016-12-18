@@ -1,0 +1,229 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.castArray()\t _ Lang",
+            "contents": ".castArray(${1:value})$0"
+        },
+        {
+            "trigger": "cld.clone()\t _ Lang",
+            "contents": ".clone(${1:value})$0"
+        },
+        {
+            "trigger": "cld.cloneDeep()\t _ Lang",
+            "contents": ".cloneDeep(${1:value})$0"
+        },
+        {
+            "trigger": "cld.cloneDeepWith()\t _ Lang",
+            "contents": ".cloneDeepWith(${1:value}, ${2:[customizer]})$0"
+        },
+        {
+            "trigger": "cld.cloneWith()\t _ Lang",
+            "contents": ".cloneWith(${1:value}, ${2:[customizer]})$0"
+        },
+        {
+            "trigger": "cld.conformsTo()\t _ Lang",
+            "contents": ".conformsTo(${1:object}, ${2:source})$0"
+        },
+        {
+            "trigger": "cld.eq()\t _ Lang",
+            "contents": ".eq(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.gt()\t _ Lang",
+            "contents": ".gt(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.gte()\t _ Lang",
+            "contents": ".gte(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.isArguments()\t _ Lang",
+            "contents": ".isArguments(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isArray()\t _ Lang",
+            "contents": ".isArray(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isArrayBuffer()\t _ Lang",
+            "contents": ".isArrayBuffer(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isArrayLike()\t _ Lang",
+            "contents": ".isArrayLike(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isArrayLikeObject()\t _ Lang",
+            "contents": ".isArrayLikeObject(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isBoolean()\t _ Lang",
+            "contents": ".isBoolean(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isBuffer()\t _ Lang",
+            "contents": ".isBuffer(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isDate()\t _ Lang",
+            "contents": ".isDate(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isElement()\t _ Lang",
+            "contents": ".isElement(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isEmpty()\t _ Lang",
+            "contents": ".isEmpty(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isEqual()\t _ Lang",
+            "contents": ".isEqual(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.isEqualWith()\t _ Lang",
+            "contents": ".isEqualWith(${1:value}, ${2:other}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "cld.isError()\t _ Lang",
+            "contents": ".isError(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isFinite()\t _ Lang",
+            "contents": ".isFinite(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isFunction()\t _ Lang",
+            "contents": ".isFunction(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isInteger()\t _ Lang",
+            "contents": ".isInteger(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isLength()\t _ Lang",
+            "contents": ".isLength(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isMap()\t _ Lang",
+            "contents": ".isMap(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isMatch()\t _ Lang",
+            "contents": ".isMatch(${1:object}, ${2:source})$0"
+        },
+        {
+            "trigger": "cld.isMatchWith()\t _ Lang",
+            "contents": ".isMatchWith(${1:object}, ${2:source}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "cld.isNaN()\t _ Lang",
+            "contents": ".isNaN(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isNative()\t _ Lang",
+            "contents": ".isNative(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isNil()\t _ Lang",
+            "contents": ".isNil(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isNull()\t _ Lang",
+            "contents": ".isNull(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isNumber()\t _ Lang",
+            "contents": ".isNumber(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isObject()\t _ Lang",
+            "contents": ".isObject(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isObjectLike()\t _ Lang",
+            "contents": ".isObjectLike(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isPlainObject()\t _ Lang",
+            "contents": ".isPlainObject(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isRegExp()\t _ Lang",
+            "contents": ".isRegExp(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isSafeInteger()\t _ Lang",
+            "contents": ".isSafeInteger(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isSet()\t _ Lang",
+            "contents": ".isSet(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isString()\t _ Lang",
+            "contents": ".isString(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isSymbol()\t _ Lang",
+            "contents": ".isSymbol(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isTypedArray()\t _ Lang",
+            "contents": ".isTypedArray(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isUndefined()\t _ Lang",
+            "contents": ".isUndefined(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isWeakMap()\t _ Lang",
+            "contents": ".isWeakMap(${1:value})$0"
+        },
+        {
+            "trigger": "cld.isWeakSet()\t _ Lang",
+            "contents": ".isWeakSet(${1:value})$0"
+        },
+        {
+            "trigger": "cld.lt()\t _ Lang",
+            "contents": ".lt(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.lte()\t _ Lang",
+            "contents": ".lte(${1:value}, ${2:other})$0"
+        },
+        {
+            "trigger": "cld.toArray()\t _ Lang",
+            "contents": ".toArray(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toFinite()\t _ Lang",
+            "contents": ".toFinite(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toInteger()\t _ Lang",
+            "contents": ".toInteger(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toLength()\t _ Lang",
+            "contents": ".toLength(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toNumber()\t _ Lang",
+            "contents": ".toNumber(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toPlainObject()\t _ Lang",
+            "contents": ".toPlainObject(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toSafeInteger()\t _ Lang",
+            "contents": ".toSafeInteger(${1:value})$0"
+        },
+        {
+            "trigger": "cld.toString()\t _ Lang",
+            "contents": ".toString(${1:value})$0"
+        }
+    ]
+}

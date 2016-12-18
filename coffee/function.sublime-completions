@@ -1,0 +1,97 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.after()\t _ Function",
+            "contents": ".after(${1:n}, ${2:func})$0"
+        },
+        {
+            "trigger": "cld.ary()\t _ Function",
+            "contents": ".ary(${1:func}, ${2:[n=func.length]})$0"
+        },
+        {
+            "trigger": "cld.before()\t _ Function",
+            "contents": ".before(${1:n}, ${2:func})$0"
+        },
+        {
+            "trigger": "cld.bind()\t _ Function",
+            "contents": ".bind(${1:func}, ${2:thisArg}, ${3:[partials]})$0"
+        },
+        {
+            "trigger": "cld.bindKey()\t _ Function",
+            "contents": ".bindKey(${1:object}, ${2:key}, ${3:[partials]})$0"
+        },
+        {
+            "trigger": "cld.curry()\t _ Function",
+            "contents": ".curry(${1:func}, ${2:[arity=func.length]})$0"
+        },
+        {
+            "trigger": "cld.curryRight()\t _ Function",
+            "contents": ".curryRight(${1:func}, ${2:[arity=func.length]})$0"
+        },
+        {
+            "trigger": "cld.debounce()\t _ Function",
+            "contents": ".debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=false]}, ${5:[options.maxWait]}, ${6:[options.trailing=true]})$0"
+        },
+        {
+            "trigger": "cld.defer()\t _ Function",
+            "contents": ".defer(${1:func}, ${2:[args]})$0"
+        },
+        {
+            "trigger": "cld.delay()\t _ Function",
+            "contents": ".delay(${1:func}, ${2:wait}, ${3:[args]})$0"
+        },
+        {
+            "trigger": "cld.flip()\t _ Function",
+            "contents": ".flip(${1:func})$0"
+        },
+        {
+            "trigger": "cld.memoize()\t _ Function",
+            "contents": ".memoize(${1:func}, ${2:[resolver]})$0"
+        },
+        {
+            "trigger": "cld.negate()\t _ Function",
+            "contents": ".negate(${1:predicate})$0"
+        },
+        {
+            "trigger": "cld.once()\t _ Function",
+            "contents": ".once(${1:func})$0"
+        },
+        {
+            "trigger": "cld.overArgs()\t _ Function",
+            "contents": ".overArgs(${1:func}, ${2:[transforms=[_.identity]]})$0"
+        },
+        {
+            "trigger": "cld.partial()\t _ Function",
+            "contents": ".partial(${1:func}, ${2:[partials]})$0"
+        },
+        {
+            "trigger": "cld.partialRight()\t _ Function",
+            "contents": ".partialRight(${1:func}, ${2:[partials]})$0"
+        },
+        {
+            "trigger": "cld.rearg()\t _ Function",
+            "contents": ".rearg(${1:func}, ${2:indexes})$0"
+        },
+        {
+            "trigger": "cld.rest()\t _ Function",
+            "contents": ".rest(${1:func}, ${2:[start=func.length-1]})$0"
+        },
+        {
+            "trigger": "cld.spread()\t _ Function",
+            "contents": ".spread(${1:func}, ${2:[start=0]})$0"
+        },
+        {
+            "trigger": "cld.throttle()\t _ Function",
+            "contents": ".throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=true]}, ${5:[options.trailing=true]})$0"
+        },
+        {
+            "trigger": "cld.unary()\t _ Function",
+            "contents": ".unary(${1:func})$0"
+        },
+        {
+            "trigger": "cld.wrap()\t _ Function",
+            "contents": ".wrap(${1:value}, ${2:[wrapper=identity]})$0"
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "ld.assign()\t _ Object",
+            "contents": "_.assign(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.assignIn()\t _ Object",
+            "contents": "_.assignIn(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.extend()\t _ Object",
+            "contents": "_.extend(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.assignInWith()\t _ Object",
+            "contents": "_.assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "ld.extendWith()\t _ Object",
+            "contents": "_.extendWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "ld.assignWith()\t _ Object",
+            "contents": "_.assignWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
+        },
+        {
+            "trigger": "ld.at()\t _ Object",
+            "contents": "_.at(${1:object}, ${2:[paths]})$0"
+        },
+        {
+            "trigger": "ld.create()\t _ Object",
+            "contents": "_.create(${1:prototype}, ${2:[properties]})$0"
+        },
+        {
+            "trigger": "ld.defaults()\t _ Object",
+            "contents": "_.defaults(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.defaultsDeep()\t _ Object",
+            "contents": "_.defaultsDeep(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.findKey()\t _ Object",
+            "contents": "_.findKey(${1:object}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.findLastKey()\t _ Object",
+            "contents": "_.findLastKey(${1:object}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.forIn()\t _ Object",
+            "contents": "_.forIn(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.forInRight()\t _ Object",
+            "contents": "_.forInRight(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.forOwn()\t _ Object",
+            "contents": "_.forOwn(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.forOwnRight()\t _ Object",
+            "contents": "_.forOwnRight(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.functions()\t _ Object",
+            "contents": "_.functions(${1:object})$0"
+        },
+        {
+            "trigger": "ld.functionsIn()\t _ Object",
+            "contents": "_.functionsIn(${1:object})$0"
+        },
+        {
+            "trigger": "ld.get()\t _ Object",
+            "contents": "_.get(${1:object}, ${2:path}, ${3:[defaultValue]})$0"
+        },
+        {
+            "trigger": "ld.has()\t _ Object",
+            "contents": "_.has(${1:object}, ${2:path})$0"
+        },
+        {
+            "trigger": "ld.hasIn()\t _ Object",
+            "contents": "_.hasIn(${1:object}, ${2:path})$0"
+        },
+        {
+            "trigger": "ld.invert()\t _ Object",
+            "contents": "_.invert(${1:object})$0"
+        },
+        {
+            "trigger": "ld.invertBy()\t _ Object",
+            "contents": "_.invertBy(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.invoke()\t _ Object",
+            "contents": "_.invoke(${1:object}, ${2:path}, ${3:[args]})$0"
+        },
+        {
+            "trigger": "ld.keys()\t _ Object",
+            "contents": "_.keys(${1:object})$0"
+        },
+        {
+            "trigger": "ld.keysIn()\t _ Object",
+            "contents": "_.keysIn(${1:object})$0"
+        },
+        {
+            "trigger": "ld.mapKeys()\t _ Object",
+            "contents": "_.mapKeys(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.mapValues()\t _ Object",
+            "contents": "_.mapValues(${1:object}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.merge()\t _ Object",
+            "contents": "_.merge(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.mergeWith()\t _ Object",
+            "contents": "_.mergeWith(${1:object}, ${2:sources}, ${3:customizer})$0"
+        },
+        {
+            "trigger": "ld.omit()\t _ Object",
+            "contents": "_.omit(${1:object}, ${2:[props]})$0"
+        },
+        {
+            "trigger": "ld.omitBy()\t _ Object",
+            "contents": "_.omitBy(${1:object}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.pick()\t _ Object",
+            "contents": "_.pick(${1:object}, ${2:[props]})$0"
+        },
+        {
+            "trigger": "ld.pickBy()\t _ Object",
+            "contents": "_.pickBy(${1:object}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.result()\t _ Object",
+            "contents": "_.result(${1:object}, ${2:path}, ${3:[defaultValue]})$0"
+        },
+        {
+            "trigger": "ld.set()\t _ Object",
+            "contents": "_.set(${1:object}, ${2:path}, ${3:value})$0"
+        },
+        {
+            "trigger": "ld.setWith()\t _ Object",
+            "contents": "_.setWith(${1:object}, ${2:path}, ${3:value}, ${4:[customizer]})$0"
+        },
+        {
+            "trigger": "ld.toPairs()\t _ Object",
+            "contents": "_.toPairs(${1:object})$0"
+        },
+        {
+            "trigger": "ld.entries()\t _ Object",
+            "contents": "_.entries(${1:object})$0"
+        },
+        {
+            "trigger": "ld.toPairsIn()\t _ Object",
+            "contents": "_.toPairsIn(${1:object})$0"
+        },
+        {
+            "trigger": "ld.entriesIn()\t _ Object",
+            "contents": "_.entriesIn(${1:object})$0"
+        },
+        {
+            "trigger": "ld.transform()\t _ Object",
+            "contents": "_.transform(${1:object}, ${2:[iteratee=_.identity]}, ${3:[accumulator]})$0"
+        },
+        {
+            "trigger": "ld.unset()\t _ Object",
+            "contents": "_.unset(${1:object}, ${2:path})$0"
+        },
+        {
+            "trigger": "ld.update()\t _ Object",
+            "contents": "_.update(${1:object}, ${2:path}, ${3:updater})$0"
+        },
+        {
+            "trigger": "ld.updateWith()\t _ Object",
+            "contents": "_.updateWith(${1:object}, ${2:path}, ${3:updater}, ${4:[customizer]})$0"
+        },
+        {
+            "trigger": "ld.values()\t _ Object",
+            "contents": "_.values(${1:object})$0"
+        },
+        {
+            "trigger": "ld.valuesIn()\t _ Object",
+            "contents": "_.valuesIn(${1:object})$0"
+        },
+    ]
+}

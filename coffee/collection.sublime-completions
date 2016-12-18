@@ -1,0 +1,117 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.countBy()\t _ Collection",
+            "contents": ".countBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.every()\t _ Collection",
+            "contents": ".every(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.filter()\t _ Collection",
+            "contents": ".filter(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.find()\t _ Collection",
+            "contents": ".find(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=0]})$0"
+        },
+        {
+            "trigger": "cld.findLast()\t _ Collection",
+            "contents": ".findLast(${1:collection}, ${2:[predicate=_.identity]}, ${3:[fromIndex=collection.length-1]})$0"
+        },
+        {
+            "trigger": "cld.flatMap()\t _ Collection",
+            "contents": ".flatMap(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.flatMapDeep()\t _ Collection",
+            "contents": ".flatMapDeep(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.flatMapDepth()\t _ Collection",
+            "contents": ".flatMapDepth(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[depth=1]})$0"
+        },
+        {
+            "trigger": "cld.forEach()\t _ Collection",
+            "contents": ".forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.each()\t _ Collection",
+            "contents": ".each(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.forEachRight()\t _ Collection",
+            "contents": ".forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.eachRight()\t _ Collection",
+            "contents": ".eachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.groupBy()\t _ Collection",
+            "contents": ".groupBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.includes()\t _ Collection",
+            "contents": ".includes(${1:collection}, ${2:value}, ${3:[fromIndex=0]})$0"
+        },
+        {
+            "trigger": "cld.invokeMap()\t _ Collection",
+            "contents": ".invokeMap(${1:collection}, ${2:path}, ${3:[args]})$0"
+        },
+        {
+            "trigger": "cld.keyBy()\t _ Collection",
+            "contents": ".keyBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.map()\t _ Collection",
+            "contents": ".map(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.orderBy()\t _ Collection",
+            "contents": ".orderBy(${1:collection}, ${2:[iteratees=[_.identity]]}, ${3:[orders]})$0"
+        },
+        {
+            "trigger": "cld.partition()\t _ Collection",
+            "contents": ".partition(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.reduce()\t _ Collection",
+            "contents": ".reduce(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]})$0"
+        },
+        {
+            "trigger": "cld.reduceRight()\t _ Collection",
+            "contents": ".reduceRight(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[accumulator]})$0"
+        },
+        {
+            "trigger": "cld.reject()\t _ Collection",
+            "contents": ".reject(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.sample()\t _ Collection",
+            "contents": ".sample(${1:collection})$0"
+        },
+        {
+            "trigger": "cld.sampleSize()\t _ Collection",
+            "contents": ".sampleSize(${1:collection}, ${2:[n=1]})$0"
+        },
+        {
+            "trigger": "cld.shuffle()\t _ Collection",
+            "contents": ".shuffle(${1:collection})$0"
+        },
+        {
+            "trigger": "cld.size()\t _ Collection",
+            "contents": ".size(${1:collection})$0"
+        },
+        {
+            "trigger": "cld.some()\t _ Collection",
+            "contents": ".some(${1:collection}, ${2:[predicate=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.sortBy()\t _ Collection",
+            "contents": ".sortBy(${1:collection}, ${2:[iteratees=[_.identity]]})$0"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "ld.templateSettings.imports._\t _ Methods",
+            "contents": "_.templateSettings.imports._$0"
+        },
+    ]
+}

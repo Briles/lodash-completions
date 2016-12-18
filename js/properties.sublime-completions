@@ -1,0 +1,33 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "ld.VERSION\t _ Properties",
+            "contents": "_.VERSION$0"
+        },
+        {
+            "trigger": "ld.templateSettings\t _ Properties",
+            "contents": "_.templateSettings$0"
+        },
+        {
+            "trigger": "ld.templateSettings.escape\t _ Properties",
+            "contents": "_.templateSettings.escape$0"
+        },
+        {
+            "trigger": "ld.templateSettings.evaluate\t _ Properties",
+            "contents": "_.templateSettings.evaluate$0"
+        },
+        {
+            "trigger": "ld.templateSettings.imports\t _ Properties",
+            "contents": "_.templateSettings.imports$0"
+        },
+        {
+            "trigger": "ld.templateSettings.interpolate\t _ Properties",
+            "contents": "_.templateSettings.interpolate$0"
+        },
+        {
+            "trigger": "ld.templateSettings.variable\t _ Properties",
+            "contents": "_.templateSettings.variable$0"
+        },
+    ]
+}

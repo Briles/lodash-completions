@@ -1,0 +1,65 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "ld.add()\t _ Math",
+            "contents": "_.add(${1:augend}, ${2:addend})$0"
+        },
+        {
+            "trigger": "ld.ceil()\t _ Math",
+            "contents": "_.ceil(${1:number}, ${2:[precision=0]})$0"
+        },
+        {
+            "trigger": "ld.divide()\t _ Math",
+            "contents": "_.divide(${1:dividend}, ${2:divisor})$0"
+        },
+        {
+            "trigger": "ld.floor()\t _ Math",
+            "contents": "_.floor(${1:number}, ${2:[precision=0]})$0"
+        },
+        {
+            "trigger": "ld.max()\t _ Math",
+            "contents": "_.max(${1:array})$0"
+        },
+        {
+            "trigger": "ld.maxBy()\t _ Math",
+            "contents": "_.maxBy(${1:array}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.mean()\t _ Math",
+            "contents": "_.mean(${1:array})$0"
+        },
+        {
+            "trigger": "ld.meanBy()\t _ Math",
+            "contents": "_.meanBy(${1:array}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.min()\t _ Math",
+            "contents": "_.min(${1:array})$0"
+        },
+        {
+            "trigger": "ld.minBy()\t _ Math",
+            "contents": "_.minBy(${1:array}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.multiply()\t _ Math",
+            "contents": "_.multiply(${1:multiplier}, ${2:multiplicand})$0"
+        },
+        {
+            "trigger": "ld.round()\t _ Math",
+            "contents": "_.round(${1:number}, ${2:[precision=0]})$0"
+        },
+        {
+            "trigger": "ld.subtract()\t _ Math",
+            "contents": "_.subtract(${1:minuend}, ${2:subtrahend})$0"
+        },
+        {
+            "trigger": "ld.sum()\t _ Math",
+            "contents": "_.sum(${1:array})$0"
+        },
+        {
+            "trigger": "ld.sumBy()\t _ Math",
+            "contents": "_.sumBy(${1:array}, ${2:[iteratee=_.identity]})$0"
+        },
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.templateSettings.imports._\t _ Methods",
+            "contents": ".templateSettings.imports._$0"
+        }
+    ]
+}

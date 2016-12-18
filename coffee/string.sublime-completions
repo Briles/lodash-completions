@@ -1,0 +1,125 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.camelCase()\t _ String",
+            "contents": ".camelCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.capitalize()\t _ String",
+            "contents": ".capitalize(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.deburr()\t _ String",
+            "contents": ".deburr(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.endsWith()\t _ String",
+            "contents": ".endsWith(${1:[string='']}, ${2:[target]}, ${3:[position=string.length]})$0"
+        },
+        {
+            "trigger": "cld.escape()\t _ String",
+            "contents": ".escape(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.escapeRegExp()\t _ String",
+            "contents": ".escapeRegExp(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.kebabCase()\t _ String",
+            "contents": ".kebabCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.lowerCase()\t _ String",
+            "contents": ".lowerCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.lowerFirst()\t _ String",
+            "contents": ".lowerFirst(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.pad()\t _ String",
+            "contents": ".pad(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
+        },
+        {
+            "trigger": "cld.padEnd()\t _ String",
+            "contents": ".padEnd(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
+        },
+        {
+            "trigger": "cld.padStart()\t _ String",
+            "contents": ".padStart(${1:[string='']}, ${2:[length=0]}, ${3:[chars=' ']})$0"
+        },
+        {
+            "trigger": "cld.parseInt()\t _ String",
+            "contents": ".parseInt(${1:string}, ${2:[radix=10]})$0"
+        },
+        {
+            "trigger": "cld.repeat()\t _ String",
+            "contents": ".repeat(${1:[string='']}, ${2:[n=1]})$0"
+        },
+        {
+            "trigger": "cld.replace()\t _ String",
+            "contents": ".replace(${1:[string='']}, ${2:pattern}, ${3:replacement})$0"
+        },
+        {
+            "trigger": "cld.snakeCase()\t _ String",
+            "contents": ".snakeCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.split()\t _ String",
+            "contents": ".split(${1:[string='']}, ${2:separator}, ${3:[limit]})$0"
+        },
+        {
+            "trigger": "cld.startCase()\t _ String",
+            "contents": ".startCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.startsWith()\t _ String",
+            "contents": ".startsWith(${1:[string='']}, ${2:[target]}, ${3:[position=0]})$0"
+        },
+        {
+            "trigger": "cld.template()\t _ String",
+            "contents": ".template(${1:[string='']}, ${2:[options={}]}, ${3:[options.escape=_.templateSettings.escape]}, ${4:[options.evaluate=_.templateSettings.evaluate]}, ${5:[options.imports=_.templateSettings.imports]}, ${6:[options.interpolate=_.templateSettings.interpolate]}, ${7:[options.sourceURL='lodash.templateSources[n]']}, ${8:[options.variable='obj']})$0"
+        },
+        {
+            "trigger": "cld.toLower()\t _ String",
+            "contents": ".toLower(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.toUpper()\t _ String",
+            "contents": ".toUpper(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.trim()\t _ String",
+            "contents": ".trim(${1:[string='']}, ${2:[chars=whitespace]})$0"
+        },
+        {
+            "trigger": "cld.trimEnd()\t _ String",
+            "contents": ".trimEnd(${1:[string='']}, ${2:[chars=whitespace]})$0"
+        },
+        {
+            "trigger": "cld.trimStart()\t _ String",
+            "contents": ".trimStart(${1:[string='']}, ${2:[chars=whitespace]})$0"
+        },
+        {
+            "trigger": "cld.truncate()\t _ String",
+            "contents": ".truncate(${1:[string='']}, ${2:[options={}]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
+        },
+        {
+            "trigger": "cld.unescape()\t _ String",
+            "contents": ".unescape(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.upperCase()\t _ String",
+            "contents": ".upperCase(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.upperFirst()\t _ String",
+            "contents": ".upperFirst(${1:[string='']})$0"
+        },
+        {
+            "trigger": "cld.words()\t _ String",
+            "contents": ".words(${1:[string='']}, ${2:[pattern]})$0"
+        }
+    ]
+}

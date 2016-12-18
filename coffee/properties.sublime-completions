@@ -1,0 +1,33 @@
+{
+    "scope": "source.coffee",
+    "completions": [
+        {
+            "trigger": "cld.VERSION\t _ Properties",
+            "contents": ".VERSION$0"
+        },
+        {
+            "trigger": "cld.templateSettings\t _ Properties",
+            "contents": ".templateSettings$0"
+        },
+        {
+            "trigger": "cld.templateSettings.escape\t _ Properties",
+            "contents": ".templateSettings.escape$0"
+        },
+        {
+            "trigger": "cld.templateSettings.evaluate\t _ Properties",
+            "contents": ".templateSettings.evaluate$0"
+        },
+        {
+            "trigger": "cld.templateSettings.imports\t _ Properties",
+            "contents": ".templateSettings.imports$0"
+        },
+        {
+            "trigger": "cld.templateSettings.interpolate\t _ Properties",
+            "contents": ".templateSettings.interpolate$0"
+        },
+        {
+            "trigger": "cld.templateSettings.variable\t _ Properties",
+            "contents": ".templateSettings.variable$0"
+        }
+    ]
+}

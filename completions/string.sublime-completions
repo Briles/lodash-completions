@@ -155,11 +155,11 @@
         },
         {
             "trigger": "ld.template()\t _ String",
-            "contents": "_.template(${1:[string='']}, ${2:[options={}]}, ${3:[options.escape=_.templateSettings.escape]}, ${4:[options.evaluate=_.templateSettings.evaluate]}, ${5:[options.imports=_.templateSettings.imports]}, ${6:[options.interpolate=_.templateSettings.interpolate]}, ${7:[options.sourceURL='lodash.templateSources[n]']}, ${8:[options.variable='obj']})$0"
+            "contents": "_.template(${1:[string='']}, ${2:[options={}]})$0"
         },
         {
             "trigger": "cld.template()\t _ String",
-            "contents": ".template(${1:[string='']}, ${2:[options={}]}, ${3:[options.escape=_.templateSettings.escape]}, ${4:[options.evaluate=_.templateSettings.evaluate]}, ${5:[options.imports=_.templateSettings.imports]}, ${6:[options.interpolate=_.templateSettings.interpolate]}, ${7:[options.sourceURL='lodash.templateSources[n]']}, ${8:[options.variable='obj']})$0"
+            "contents": ".template(${1:[string='']}, ${2:[options={}]})$0"
         },
         {
             "trigger": "ld.toLower()\t _ String",
@@ -203,11 +203,11 @@
         },
         {
             "trigger": "ld.truncate()\t _ String",
-            "contents": "_.truncate(${1:[string='']}, ${2:[options={}]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
+            "contents": "_.truncate(${1:[string='']}, ${2:[options={}]})$0"
         },
         {
             "trigger": "cld.truncate()\t _ String",
-            "contents": ".truncate(${1:[string='']}, ${2:[options={}]}, ${3:[options.length=30]}, ${4:[options.omission='...']}, ${5:[options.separator]})$0"
+            "contents": ".truncate(${1:[string='']}, ${2:[options={}]})$0"
         },
         {
             "trigger": "ld.unescape()\t _ String",

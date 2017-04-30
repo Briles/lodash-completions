@@ -115,11 +115,11 @@
         },
         {
             "trigger": "ld.mixin()\t _ Util",
-            "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]}, ${4:[options.chain=true]})$0"
+            "contents": "_.mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]})$0"
         },
         {
             "trigger": "cld.mixin()\t _ Util",
-            "contents": ".mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]}, ${4:[options.chain=true]})$0"
+            "contents": ".mixin(${1:[object=lodash]}, ${2:source}, ${3:[options={}]})$0"
         },
         {
             "trigger": "ld.noConflict()\t _ Util",

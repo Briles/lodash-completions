@@ -59,11 +59,11 @@
         },
         {
             "trigger": "ld.debounce()\t _ Function",
-            "contents": "_.debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=false]}, ${5:[options.maxWait]}, ${6:[options.trailing=true]})$0"
+            "contents": "_.debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]})$0"
         },
         {
             "trigger": "cld.debounce()\t _ Function",
-            "contents": ".debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=false]}, ${5:[options.maxWait]}, ${6:[options.trailing=true]})$0"
+            "contents": ".debounce(${1:func}, ${2:[wait=0]}, ${3:[options={}]})$0"
         },
         {
             "trigger": "ld.defer()\t _ Function",
@@ -163,11 +163,11 @@
         },
         {
             "trigger": "ld.throttle()\t _ Function",
-            "contents": "_.throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=true]}, ${5:[options.trailing=true]})$0"
+            "contents": "_.throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]})$0"
         },
         {
             "trigger": "cld.throttle()\t _ Function",
-            "contents": ".throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]}, ${4:[options.leading=true]}, ${5:[options.trailing=true]})$0"
+            "contents": ".throttle(${1:func}, ${2:[wait=0]}, ${3:[options={}]})$0"
         },
         {
             "trigger": "ld.unary()\t _ Function",

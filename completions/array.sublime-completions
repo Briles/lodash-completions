@@ -106,6 +106,14 @@
             "contents": ".findLastIndex(${1:array}, ${2:[predicate=_.identity]}, ${3:[fromIndex=array.length-1]})$0"
         },
         {
+            "trigger": "ld.head()\t _ Array",
+            "contents": "_.head(${1:array})$0"
+        },
+        {
+            "trigger": "cld.head()\t _ Array",
+            "contents": ".head(${1:array})$0"
+        },
+        {
             "trigger": "ld.flatten()\t _ Array",
             "contents": "_.flatten(${1:array})$0"
         },
@@ -136,22 +144,6 @@
         {
             "trigger": "cld.fromPairs()\t _ Array",
             "contents": ".fromPairs(${1:pairs})$0"
-        },
-        {
-            "trigger": "ld.head()\t _ Array",
-            "contents": "_.head(${1:array})$0"
-        },
-        {
-            "trigger": "cld.head()\t _ Array",
-            "contents": ".head(${1:array})$0"
-        },
-        {
-            "trigger": "ld.first()\t _ Array",
-            "contents": "_.first(${1:array})$0"
-        },
-        {
-            "trigger": "cld.first()\t _ Array",
-            "contents": ".first(${1:array})$0"
         },
         {
             "trigger": "ld.indexOf()\t _ Array",

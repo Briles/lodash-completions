@@ -7,7 +7,7 @@
         },
         {
             "trigger": "cld.VERSION\t _ Properties",
-            "contents": ".VERSION$0"
+            "contents": "_.VERSION$0"
         },
         {
             "trigger": "ld.templateSettings\t _ Properties",
@@ -15,7 +15,7 @@
         },
         {
             "trigger": "cld.templateSettings\t _ Properties",
-            "contents": ".templateSettings$0"
+            "contents": "_.templateSettings$0"
         },
         {
             "trigger": "ld.templateSettings.escape\t _ Properties",
@@ -23,7 +23,7 @@
         },
         {
             "trigger": "cld.templateSettings.escape\t _ Properties",
-            "contents": ".templateSettings.escape$0"
+            "contents": "_.templateSettings.escape$0"
         },
         {
             "trigger": "ld.templateSettings.evaluate\t _ Properties",
@@ -31,7 +31,7 @@
         },
         {
             "trigger": "cld.templateSettings.evaluate\t _ Properties",
-            "contents": ".templateSettings.evaluate$0"
+            "contents": "_.templateSettings.evaluate$0"
         },
         {
             "trigger": "ld.templateSettings.imports\t _ Properties",
@@ -39,7 +39,7 @@
         },
         {
             "trigger": "cld.templateSettings.imports\t _ Properties",
-            "contents": ".templateSettings.imports$0"
+            "contents": "_.templateSettings.imports$0"
         },
         {
             "trigger": "ld.templateSettings.interpolate\t _ Properties",
@@ -47,7 +47,7 @@
         },
         {
             "trigger": "cld.templateSettings.interpolate\t _ Properties",
-            "contents": ".templateSettings.interpolate$0"
+            "contents": "_.templateSettings.interpolate$0"
         },
         {
             "trigger": "ld.templateSettings.variable\t _ Properties",
@@ -55,7 +55,7 @@
         },
         {
             "trigger": "cld.templateSettings.variable\t _ Properties",
-            "contents": ".templateSettings.variable$0"
+            "contents": "_.templateSettings.variable$0"
         }
     ]
 }

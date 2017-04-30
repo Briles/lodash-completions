@@ -10,6 +10,22 @@
             "contents": ".countBy(${1:collection}, ${2:[iteratee=_.identity]})$0"
         },
         {
+            "trigger": "ld.forEach()\t _ Collection",
+            "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.forEach()\t _ Collection",
+            "contents": ".forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "ld.forEachRight()\t _ Collection",
+            "contents": "_.forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
+            "trigger": "cld.forEachRight()\t _ Collection",
+            "contents": ".forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
+        },
+        {
             "trigger": "ld.every()\t _ Collection",
             "contents": "_.every(${1:collection}, ${2:[predicate=_.identity]})$0"
         },
@@ -64,38 +80,6 @@
         {
             "trigger": "cld.flatMapDepth()\t _ Collection",
             "contents": ".flatMapDepth(${1:collection}, ${2:[iteratee=_.identity]}, ${3:[depth=1]})$0"
-        },
-        {
-            "trigger": "ld.forEach()\t _ Collection",
-            "contents": "_.forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "cld.forEach()\t _ Collection",
-            "contents": ".forEach(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "ld.each()\t _ Collection",
-            "contents": "_.each(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "cld.each()\t _ Collection",
-            "contents": ".each(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "ld.forEachRight()\t _ Collection",
-            "contents": "_.forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "cld.forEachRight()\t _ Collection",
-            "contents": ".forEachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "ld.eachRight()\t _ Collection",
-            "contents": "_.eachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
-        },
-        {
-            "trigger": "cld.eachRight()\t _ Collection",
-            "contents": ".eachRight(${1:collection}, ${2:[iteratee=_.identity]})$0"
         },
         {
             "trigger": "ld.groupBy()\t _ Collection",

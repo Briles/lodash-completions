@@ -7,7 +7,7 @@
         },
         {
             "trigger": "cld.templateSettings.imports._\t _ Methods",
-            "contents": ".templateSettings.imports._$0"
+            "contents": "_.templateSettings.imports._$0"
         }
     ]
 }

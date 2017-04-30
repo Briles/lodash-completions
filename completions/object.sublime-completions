@@ -18,28 +18,12 @@
             "contents": ".assignIn(${1:object}, ${2:[sources]})$0"
         },
         {
-            "trigger": "ld.extend()\t _ Object",
-            "contents": "_.extend(${1:object}, ${2:[sources]})$0"
-        },
-        {
-            "trigger": "cld.extend()\t _ Object",
-            "contents": ".extend(${1:object}, ${2:[sources]})$0"
-        },
-        {
             "trigger": "ld.assignInWith()\t _ Object",
             "contents": "_.assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
         },
         {
             "trigger": "cld.assignInWith()\t _ Object",
             "contents": ".assignInWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
-        },
-        {
-            "trigger": "ld.extendWith()\t _ Object",
-            "contents": "_.extendWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
-        },
-        {
-            "trigger": "cld.extendWith()\t _ Object",
-            "contents": ".extendWith(${1:object}, ${2:sources}, ${3:[customizer]})$0"
         },
         {
             "trigger": "ld.assignWith()\t _ Object",
@@ -80,6 +64,22 @@
         {
             "trigger": "cld.defaultsDeep()\t _ Object",
             "contents": ".defaultsDeep(${1:object}, ${2:[sources]})$0"
+        },
+        {
+            "trigger": "ld.toPairs()\t _ Object",
+            "contents": "_.toPairs(${1:object})$0"
+        },
+        {
+            "trigger": "cld.toPairs()\t _ Object",
+            "contents": ".toPairs(${1:object})$0"
+        },
+        {
+            "trigger": "ld.toPairsIn()\t _ Object",
+            "contents": "_.toPairsIn(${1:object})$0"
+        },
+        {
+            "trigger": "cld.toPairsIn()\t _ Object",
+            "contents": ".toPairsIn(${1:object})$0"
         },
         {
             "trigger": "ld.findKey()\t _ Object",
@@ -296,38 +296,6 @@
         {
             "trigger": "cld.setWith()\t _ Object",
             "contents": ".setWith(${1:object}, ${2:path}, ${3:value}, ${4:[customizer]})$0"
-        },
-        {
-            "trigger": "ld.toPairs()\t _ Object",
-            "contents": "_.toPairs(${1:object})$0"
-        },
-        {
-            "trigger": "cld.toPairs()\t _ Object",
-            "contents": ".toPairs(${1:object})$0"
-        },
-        {
-            "trigger": "ld.entries()\t _ Object",
-            "contents": "_.entries(${1:object})$0"
-        },
-        {
-            "trigger": "cld.entries()\t _ Object",
-            "contents": ".entries(${1:object})$0"
-        },
-        {
-            "trigger": "ld.toPairsIn()\t _ Object",
-            "contents": "_.toPairsIn(${1:object})$0"
-        },
-        {
-            "trigger": "cld.toPairsIn()\t _ Object",
-            "contents": ".toPairsIn(${1:object})$0"
-        },
-        {
-            "trigger": "ld.entriesIn()\t _ Object",
-            "contents": "_.entriesIn(${1:object})$0"
-        },
-        {
-            "trigger": "cld.entriesIn()\t _ Object",
-            "contents": ".entriesIn(${1:object})$0"
         },
         {
             "trigger": "ld.transform()\t _ Object",

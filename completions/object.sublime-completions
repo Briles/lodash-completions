@@ -243,11 +243,11 @@
         },
         {
             "trigger": "ld.omit()\t _ Object",
-            "contents": "_.omit(${1:object}, ${2:[props]})$0"
+            "contents": "_.omit(${1:object}, ${2:[paths]})$0"
         },
         {
             "trigger": "cld.omit()\t _ Object",
-            "contents": ".omit(${1:object}, ${2:[props]})$0"
+            "contents": ".omit(${1:object}, ${2:[paths]})$0"
         },
         {
             "trigger": "ld.omitBy()\t _ Object",
@@ -259,11 +259,11 @@
         },
         {
             "trigger": "ld.pick()\t _ Object",
-            "contents": "_.pick(${1:object}, ${2:[props]})$0"
+            "contents": "_.pick(${1:object}, ${2:[paths]})$0"
         },
         {
             "trigger": "cld.pick()\t _ Object",
-            "contents": ".pick(${1:object}, ${2:[props]})$0"
+            "contents": ".pick(${1:object}, ${2:[paths]})$0"
         },
         {
             "trigger": "ld.pickBy()\t _ Object",
